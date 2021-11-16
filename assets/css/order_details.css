@@ -1,0 +1,53 @@
+.button_table{
+    border: 1px solid #e7e8eb;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 8px;
+    margin: 5px;
+    color: #8f96a1;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 3.375rem;
+    line-height: 4.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.button_dropdown{
+    border: 1px solid #e7e8eb;
+    border-radius: 5px;
+    color: #8f96a1 !important;
+    background-color: #ffffff;
+}
+
+.button_dropdown p{
+    margin:0px;
+}
+
+.button_pagination{
+    border: 1px solid #e7e8eb;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.selection-2{
+    width: 35px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #e7e8eb;
+    border-radius: 5px;
+}
+
+.table-content:hover{
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
