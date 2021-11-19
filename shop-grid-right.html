@@ -241,39 +241,15 @@
 									<div class="header-action-icon-2">
 										<a class="mini-cart-icon" href="shop-cart.html">
 											<img alt="Nest" src="assets/imgs/theme/icons/icon-cart.svg" />
-											<span class="pro-count blue">2</span>
+											<span id="model_count" class="pro-count blue home">0</span>
 										</a>
 										<a href="shop-cart.html"><span class="lable">Cart</span></a>
-										<div class="cart-dropdown-wrap cart-dropdown-hm2">
-											<ul>
-												<li>
-													<div class="shopping-cart-img">
-														<a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-3.jpg" /></a>
-													</div>
-													<div class="shopping-cart-title">
-														<h4><a href="shop-product-right.html">Daisy Casual Bag</a></h4>
-														<h4><span>1 × </span>$800.00</h4>
-													</div>
-													<div class="shopping-cart-delete">
-														<a href="#"><i class="fi-rs-cross-small"></i></a>
-													</div>
-												</li>
-												<li>
-													<div class="shopping-cart-img">
-														<a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-2.jpg" /></a>
-													</div>
-													<div class="shopping-cart-title">
-														<h4><a href="shop-product-right.html">Corduroy Shirts</a></h4>
-														<h4><span>1 × </span>$3200.00</h4>
-													</div>
-													<div class="shopping-cart-delete">
-														<a href="#"><i class="fi-rs-cross-small"></i></a>
-													</div>
-												</li>
-											</ul>
+										<div id="counter_disp_cart" class="cart-dropdown-wrap cart-dropdown-hm2">
+											<div id="style-3" class="model_card_none overflow_button">
+											</div>
 											<div class="shopping-cart-footer">
 												<div class="shopping-cart-total">
-													<h4>Total <span>$4000.00</span></h4>
+													<h4>Total <span>$<span class="cart_dd_total"></span></span></h4>
 												</div>
 												<div class="shopping-cart-button">
 													<a href="shop-cart.html" class="outline">View cart</a>
@@ -398,7 +374,7 @@
 								<nav>
 									<ul>
 										<!-- <li class="hot-deals"><img src="assets/imgs/theme/icons/icon-hot.svg" alt="hot deals" /><a href="shop-grid-right.html">Hot Deals</a></li> -->
-										<!-- <li>
+										<li>
 											<a class="active text-white" href="index.html">Home <i class="fi-rs-angle-down"></i></a>
 											<ul class="sub-menu">
 												<li><a href="index.html">Home 1</a></li>
@@ -406,7 +382,7 @@
 												<li><a href="index-3.html">Home 3</a></li>
 												<li><a href="index-4.html">Home 4</a></li>
 											</ul>
-										</li> -->
+										</li>
 										<li>
 											<a href="page-about.html">About</a>
 										</li>
@@ -577,41 +553,18 @@
 								<div class="header-action-icon-2">
 									<a class="mini-cart-icon" href="#">
 										<img alt="Nest" src="assets/imgs/theme/icons/icon-cart.svg" />
-										<span class="pro-count white">2</span>
+										<span class="pro-count home white">2</span>
 									</a>
-									<div class="cart-dropdown-wrap cart-dropdown-hm2">
-										<ul>
-											<li>
-												<div class="shopping-cart-img">
-													<a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-3.jpg" /></a>
-												</div>
-												<div class="shopping-cart-title">
-													<h4><a href="shop-product-right.html">Plain Striola Shirts</a></h4>
-													<h3><span>1 × </span>$800.00</h3>
-												</div>
-												<div class="shopping-cart-delete">
-													<a href="#"><i class="fi-rs-cross-small"></i></a>
-												</div>
-											</li>
-											<li>
-												<div class="shopping-cart-img">
-													<a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-4.jpg" /></a>
-												</div>
-												<div class="shopping-cart-title">
-													<h4><a href="shop-product-right.html">Macbook Pro 2022</a></h4>
-													<h3><span>1 × </span>$3500.00</h3>
-												</div>
-												<div class="shopping-cart-delete">
-													<a href="#"><i class="fi-rs-cross-small"></i></a>
-												</div>
-											</li>
-										</ul>
+									<a href="shop-cart.html"><span class="lable">Cart</span></a>
+									<div id="counter_disp_cart_1" class="cart-dropdown-wrap cart-dropdown-hm2">
+										<div id="style-3" class="model_card_none overflow_button">
+										</div>
 										<div class="shopping-cart-footer">
 											<div class="shopping-cart-total">
-												<h4>Total <span>$383.00</span></h4>
+												<h4>Total <span>$<span class="cart_dd_total"></span></span></h4>
 											</div>
 											<div class="shopping-cart-button">
-												<a href="shop-cart.html">View cart</a>
+												<a href="shop-cart.html" class="outline">View cart</a>
 												<a href="shop-checkout.html">Checkout</a>
 											</div>
 										</div>
@@ -899,6 +852,13 @@
 		</div>
         <!--End header-->
         <main class="main">
+            <div class="cart_popup header-action-icon-2 d-flex justify-content-center align-items-center">
+				<a class="mini-cart-icon" href="shop-cart.html">
+					<img alt="cart" class="cart_width" src="assets/imgs/theme/icons/icon-cart-pop.png" />
+					<span id="model_count" class="pro-count blue home home_popup">0</span>
+					<span class="tooltiptext">View Cart</span>
+				</a>
+			</div>
             <div class="page-header mt-30 mb-50">
                 <div class="container">
                     <div class="archive-header">
@@ -1026,7 +986,7 @@
                                                 <span class="old-price">$32.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-1-1.jpg" data-name="Seeds of Change Organic Quinoe" data-price="28.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1071,7 +1031,7 @@
                                                 <span class="old-price">$55.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-2-1.jpg" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1116,7 +1076,7 @@
                                                 <span class="old-price">$52.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-3-1.jpg" data-name="Angie’s Boomchickapop Sweet & Salty" data-price="48.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1158,7 +1118,7 @@
                                                 <span class="old-price">$19.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-4-1.jpg" data-name="Foster Farms Takeout Crispy Classic" data-price="17.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1203,7 +1163,7 @@
                                                 <span class="old-price">$25.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-5-1.jpg" data-name="Blue Diamond Almonds Lightly" data-price="23.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1245,7 +1205,7 @@
                                                 <span class="old-price">$55.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-6-1.jpg" data-name="Chobani Complete Vanilla Greek" data-price="54.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1287,7 +1247,7 @@
                                                 <span class="old-price">$33.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-7-1.jpg" data-name="Canada Dry Ginger Ale – 2 L Bottle" data-price="32.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1332,7 +1292,7 @@
                                                 <span class="old-price">$37.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-8-1.jpg" data-name="Encore Seafoods Stuffed Alaskan" data-price="35.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1377,7 +1337,7 @@
                                                 <span class="old-price">$25.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-9-1.jpg" data-name="Gorton’s Beer Battered Fish Fillets" data-price="23.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1419,7 +1379,7 @@
                                                 <span class="old-price">$24.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-10-1.jpg" data-name="Haagen-Dazs Caramel Cone Ice Cream" data-price="22.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1464,7 +1424,7 @@
                                                 <span class="old-price">$32.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-1-1.jpg" data-name="Seeds of Change Organic Quinoe" data-price="28.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1509,7 +1469,7 @@
                                                 <span class="old-price">$55.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-2-1.jpg" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1554,7 +1514,7 @@
                                                 <span class="old-price">$52.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-3-1.jpg" data-name="Angie’s Boomchickapop Sweet & Salty" data-price="48.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1596,7 +1556,7 @@
                                                 <span class="old-price">$19.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-4-1.jpg" data-name="Foster Farms Takeout Crispy Classic" data-price="17.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1641,7 +1601,7 @@
                                                 <span class="old-price">$25.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-5-1.jpg" data-name="Blue Diamond Almonds Lightly" data-price="23.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1683,7 +1643,7 @@
                                                 <span class="old-price">$55.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-6-1.jpg" data-name="Chobani Complete Vanilla Greek" data-price="54.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1725,7 +1685,7 @@
                                                 <span class="old-price">$33.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-7-1.jpg" data-name="Canada Dry Ginger Ale – 2 L Bottle" data-price="32.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1770,7 +1730,7 @@
                                                 <span class="old-price">$37.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-8-1.jpg" data-name="Encore Seafoods Stuffed Alaskan" data-price="35.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1815,7 +1775,7 @@
                                                 <span class="old-price">$25.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-9-1.jpg" data-name="Gorton’s Beer Battered Fish Fillets" data-price="23.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1857,7 +1817,7 @@
                                                 <span class="old-price">$24.8</span>
                                             </div>
                                             <div class="add-cart">
-                                                <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                <a class="add" data-image="assets/imgs/shop/product-10-1.jpg" data-name="Haagen-Dazs Caramel Cone Ice Cream" data-price="22.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1883,7 +1843,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <section class="section-padding pb-5">
+                        <!-- <section class="section-padding pb-5">
                             <div class="section-title">
                                 <h3 class="">Deals Of The Day</h3>
                                 <a class="show-all" href="shop-grid-right.html">
@@ -1922,7 +1882,7 @@
                                                         <span class="old-price">$33.8</span>
                                                     </div>
                                                     <div class="add-cart">
-                                                        <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                        <a class="add" data-image="assets/imgs/banner/banner-5.png" data-name="Seeds of Change Organic Quinoa, Brown" data-price="32.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1959,7 +1919,7 @@
                                                         <span class="old-price">$26.8</span>
                                                     </div>
                                                     <div class="add-cart">
-                                                        <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                        <a class="add" data-image="assets/imgs/banner/banner-6.png" data-name="Perdue Simply Smart Organics Gluten" data-price="24.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1996,7 +1956,7 @@
                                                         <span class="old-price">$13.8</span>
                                                     </div>
                                                     <div class="add-cart">
-                                                        <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                        <a class="add" data-image="assets/imgs/banner/banner-7.png" data-name="Signature Wood-Fired Mushroom" data-price="12.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2033,7 +1993,7 @@
                                                         <span class="old-price">$16.8</span>
                                                     </div>
                                                     <div class="add-cart">
-                                                        <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                        <a class="add" data-image="assets/imgs/banner/banner-8.png" data-name="Simply Lemonade with Raspberry Juice" data-price="15.85" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2041,7 +2001,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </section> -->
                         <!--End Deals-->
                     </div>
                     <div class="col-lg-1-5 primary-sidebar sticky-sidebar">
@@ -2135,7 +2095,7 @@
                             <a href="shop-grid-right.html" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
                         </div>
                         <!-- Product sidebar Widget -->
-                        <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
+                        <!-- <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
                             <h5 class="section-title style-1 mb-30">New products</h5>
                             <div class="single-post clearfix">
                                 <div class="image">
@@ -2173,8 +2133,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="banner-img wow fadeIn mb-lg-0 animated d-lg-block d-none">
+                        </div> -->
+                        <!-- <div class="banner-img wow fadeIn mb-lg-0 animated d-lg-block d-none">
                             <img src="assets/imgs/banner/banner-11.png" alt="" />
                             <div class="banner-text">
                                 <span>Oganic</span>
@@ -2184,7 +2144,7 @@
                                     Juice
                                 </h4>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -2340,13 +2300,13 @@
                         <div class="footer-link-widget col">
                             <h4 class="widget-title">Popular</h4>
                             <ul class="footer-list mb-sm-5 mb-md-0">
-                                <li><a href="#">Milk & Flavoured Milk</a></li>
-                                <li><a href="#">Butter and Margarine</a></li>
-                                <li><a href="#">Eggs Substitutes</a></li>
-                                <li><a href="#">Marmalades</a></li>
-                                <li><a href="#">Sour Cream and Dips</a></li>
-                                <li><a href="#">Tea & Kombucha</a></li>
-                                <li><a href="#">Cheese</a></li>
+                                <li><a href="shop-grid-right.html">Devices</a></li>
+								<li><a href="Nutrition.html">Nutrition & Fitness Supplements</a></li>
+								<li><a href="personalCare.html">Personal Care</a></li>
+								<li><a href="AyurvedicCare.html">Ayurvedic Care</a></li>
+								<li><a href="babyMomCare.html">Baby & Mom Care</a></li>
+								<li><a href="skinCare.html">Skin Care</a></li>
+								<li><a href="diabeticCare.html">Diabetic Care</a></li>
                             </ul>
                         </div>
                         <div class="footer-link-widget widget-install-app col">
@@ -2428,5 +2388,6 @@
         <!-- Template  JS -->
         <script src="./assets/js/main.js?v=2.1"></script>
         <script src="./assets/js/shop.js?v=2.1"></script>
+        <script src="assets/js/cart.js"></script>
     </body>
 </html>

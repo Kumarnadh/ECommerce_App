@@ -152,39 +152,15 @@
 									<div class="header-action-icon-2">
 										<a class="mini-cart-icon" href="shop-cart.html">
 											<img alt="Nest" src="assets/imgs/theme/icons/icon-cart.svg" />
-											<span class="pro-count blue">2</span>
+											<span id="model_count" class="pro-count blue home">0</span>
 										</a>
 										<a href="shop-cart.html"><span class="lable">Cart</span></a>
-										<div class="cart-dropdown-wrap cart-dropdown-hm2">
-											<ul>
-												<li>
-													<div class="shopping-cart-img">
-														<a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-3.jpg" /></a>
-													</div>
-													<div class="shopping-cart-title">
-														<h4><a href="shop-product-right.html">Daisy Casual Bag</a></h4>
-														<h4><span>1 × </span>$800.00</h4>
-													</div>
-													<div class="shopping-cart-delete">
-														<a href="#"><i class="fi-rs-cross-small"></i></a>
-													</div>
-												</li>
-												<li>
-													<div class="shopping-cart-img">
-														<a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-2.jpg" /></a>
-													</div>
-													<div class="shopping-cart-title">
-														<h4><a href="shop-product-right.html">Corduroy Shirts</a></h4>
-														<h4><span>1 × </span>$3200.00</h4>
-													</div>
-													<div class="shopping-cart-delete">
-														<a href="#"><i class="fi-rs-cross-small"></i></a>
-													</div>
-												</li>
-											</ul>
+										<div id="counter_disp_cart" class="cart-dropdown-wrap cart-dropdown-hm2">
+											<div id="style-3" class="model_card_none overflow_button">
+											</div>
 											<div class="shopping-cart-footer">
 												<div class="shopping-cart-total">
-													<h4>Total <span>$4000.00</span></h4>
+													<h4>Total <span>$<span class="cart_dd_total"></span></span></h4>
 												</div>
 												<div class="shopping-cart-button">
 													<a href="shop-cart.html" class="outline">View cart</a>
@@ -470,41 +446,18 @@
 								<div class="header-action-icon-2">
 									<a class="mini-cart-icon" href="#">
 										<img alt="Nest" src="assets/imgs/theme/icons/icon-cart.svg" />
-										<span class="pro-count white">2</span>
+										<span class="pro-count blue home"></span>
 									</a>
-									<div class="cart-dropdown-wrap cart-dropdown-hm2">
-										<ul>
-											<li>
-												<div class="shopping-cart-img">
-													<a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-3.jpg" /></a>
-												</div>
-												<div class="shopping-cart-title">
-													<h4><a href="shop-product-right.html">Plain Striola Shirts</a></h4>
-													<h3><span>1 × </span>$800.00</h3>
-												</div>
-												<div class="shopping-cart-delete">
-													<a href="#"><i class="fi-rs-cross-small"></i></a>
-												</div>
-											</li>
-											<li>
-												<div class="shopping-cart-img">
-													<a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-4.jpg" /></a>
-												</div>
-												<div class="shopping-cart-title">
-													<h4><a href="shop-product-right.html">Macbook Pro 2022</a></h4>
-													<h3><span>1 × </span>$3500.00</h3>
-												</div>
-												<div class="shopping-cart-delete">
-													<a href="#"><i class="fi-rs-cross-small"></i></a>
-												</div>
-											</li>
-										</ul>
+									<a href="shop-cart.html"><span class="lable">Cart</span></a>
+									<div id="counter_disp_cart" class="cart-dropdown-wrap cart-dropdown-hm2">
+										<div id="style-3" class="model_card_none overflow_button">
+										</div>
 										<div class="shopping-cart-footer">
 											<div class="shopping-cart-total">
-												<h4>Total <span>$383.00</span></h4>
+												<h4>Total <span class="cart_dd_total"></span><span>$</span></h4>
 											</div>
 											<div class="shopping-cart-button">
-												<a href="shop-cart.html">View cart</a>
+												<a href="shop-cart.html" class="outline">View cart</a>
 												<a href="shop-checkout.html">Checkout</a>
 											</div>
 										</div>
@@ -773,6 +726,13 @@
 		</div>
         <!--End header-->
         <main class="main pages">
+			<div class="cart_popup header-action-icon-2 d-flex justify-content-center align-items-center">
+				<a class="mini-cart-icon" href="shop-cart.html">
+					<img alt="cart" class="cart_width" src="assets/imgs/theme/icons/icon-cart-pop.png" />
+					<span id="model_count" class="pro-count blue home home_popup">0</span>
+					<span class="tooltiptext">View Cart</span>
+				</a>
+			</div>
             <div class="page-header breadcrumb-wrap">
                 <div class="container">
                     <div class="breadcrumb">
@@ -816,16 +776,16 @@
                         </div>
                     </div>
                 </div>
-                <section class="container mb-50 d-none d-md-block">
+                <!-- <section class="container mb-50 d-none d-md-block">
                     <div class="border-radius-15 overflow-hidden">
                         <div id="map-panes" class="leaflet-map"></div>
                     </div>
-                </section>
+                </section> -->
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-10 col-lg-12 m-auto">
                             <section class="mb-50">
-                                <div class="row mb-60">
+                                <!-- <div class="row mb-60">
                                     <div class="col-md-4 mb-4 mb-md-0">
                                         <h4 class="mb-15 text-brand">Office</h4>
                                         205 North Michigan Avenue, Suite 810<br />
@@ -850,7 +810,7 @@
                                         <abbr title="Email">Email: </abbr>contact@Evara.com<br />
                                         <a class="btn btn-sm font-weight-bold text-white mt-20 border-radius-5 btn-shadow-brand hover-up"><i class="fi-rs-marker mr-5"></i>View map</a>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="row">
                                     <div class="col-xl-8">
                                         <div class="contact-from-area padding-20-row-col">
@@ -891,7 +851,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-4 pl-50 d-lg-block d-none">
-                                        <img class="border-radius-15 mt-50" src="assets/imgs/page/contact-2.png" alt="" />
+                                        <img class="border-radius-15 mt-50" src="assets/imgs/page/contact_img1.jpg" alt="contact_image" />
                                     </div>
                                 </div>
                             </section>
@@ -1051,13 +1011,13 @@
                         <div class="footer-link-widget col">
                             <h4 class="widget-title">Popular</h4>
                             <ul class="footer-list mb-sm-5 mb-md-0">
-                                <li><a href="#">Milk & Flavoured Milk</a></li>
-                                <li><a href="#">Butter and Margarine</a></li>
-                                <li><a href="#">Eggs Substitutes</a></li>
-                                <li><a href="#">Marmalades</a></li>
-                                <li><a href="#">Sour Cream and Dips</a></li>
-                                <li><a href="#">Tea & Kombucha</a></li>
-                                <li><a href="#">Cheese</a></li>
+                                <li><a href="shop-grid-right.html">Devices</a></li>
+								<li><a href="Nutrition.html">Nutrition & Fitness Supplements</a></li>
+								<li><a href="personalCare.html">Personal Care</a></li>
+								<li><a href="AyurvedicCare.html">Ayurvedic Care</a></li>
+								<li><a href="babyMomCare.html">Baby & Mom Care</a></li>
+								<li><a href="skinCare.html">Skin Care</a></li>
+								<li><a href="diabeticCare.html">Diabetic Care</a></li>
                             </ul>
                         </div>
                         <div class="footer-link-widget widget-install-app col">
@@ -1139,5 +1099,6 @@
         <!-- Template  JS -->
         <script src="./assets/js/main.js?v=2.1"></script>
         <script src="./assets/js/shop.js?v=2.1"></script>
+		<script src="assets/js/cart.js"></script>
     </body>
 </html>

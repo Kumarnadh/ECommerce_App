@@ -240,40 +240,16 @@
 									</div>
 									<div class="header-action-icon-2">
 										<a class="mini-cart-icon" href="shop-cart.html">
-											<img alt="Nest" src="assets/imgs/theme/icons/icon-cart.svg" />
-											<span class="pro-count blue">2</span>
+											<img alt="Cart" src="assets/imgs/theme/icons/icon-cart.svg" />
+											<span id="model_count" class="pro-count blue home">0</span>
 										</a>
 										<a href="shop-cart.html"><span class="lable">Cart</span></a>
-										<div class="cart-dropdown-wrap cart-dropdown-hm2">
-											<ul>
-												<li>
-													<div class="shopping-cart-img">
-														<a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-3.jpg" /></a>
-													</div>
-													<div class="shopping-cart-title">
-														<h4><a href="shop-product-right.html">Daisy Casual Bag</a></h4>
-														<h4><span>1 × </span>$800.00</h4>
-													</div>
-													<div class="shopping-cart-delete">
-														<a href="#"><i class="fi-rs-cross-small"></i></a>
-													</div>
-												</li>
-												<li>
-													<div class="shopping-cart-img">
-														<a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-2.jpg" /></a>
-													</div>
-													<div class="shopping-cart-title">
-														<h4><a href="shop-product-right.html">Corduroy Shirts</a></h4>
-														<h4><span>1 × </span>$3200.00</h4>
-													</div>
-													<div class="shopping-cart-delete">
-														<a href="#"><i class="fi-rs-cross-small"></i></a>
-													</div>
-												</li>
-											</ul>
+										<div id="counter_disp_cart" class="cart-dropdown-wrap cart-dropdown-hm2">
+											<div id="style-3" class="model_card_none overflow_button">
+											</div>
 											<div class="shopping-cart-footer">
 												<div class="shopping-cart-total">
-													<h4>Total <span>$4000.00</span></h4>
+													<h4>Total <span>$<span class="cart_dd_total"></span></span></h4>
 												</div>
 												<div class="shopping-cart-button">
 													<a href="shop-cart.html" class="outline">View cart</a>
@@ -862,33 +838,100 @@
 		</div>
         <!--End header-->
         <main class="main">
+            <div class="cart_popup header-action-icon-2 d-flex justify-content-center align-items-center">
+				<a class="mini-cart-icon" href="shop-cart.html">
+					<img alt="cart" class="cart_width" src="assets/imgs/theme/icons/icon-cart-pop.png" />
+					<span id="model_count" class="pro-count blue home home_popup">0</span>
+					<span class="tooltiptext">View Cart</span>
+				</a>
+			</div>
             <div class="page-header mt-30 mb-50">
                 <div class="container">
                     <div class="archive-header">
                         <div class="row align-items-center">
                             <div class="col-xl-3">
-                                <h1 class="mb-15">Snack</h1>
+                                <h1 class="mb-15">Shop</h1>
                                 <div class="breadcrumb">
                                     <a href="index.html" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
-                                    <span></span> Shop <span></span> Snack
+                                    <span></span> Shop
                                 </div>
                             </div>
                             <div class="col-xl-9 text-end d-none d-xl-block">
-                                <ul class="tags-list">
+                                <ul class="tags-lists">
                                     <li class="hover-up">
-                                        <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Cabbage</a>
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Devices</a>
+                                        </div>
                                     </li>
                                     <li class="hover-up active">
-                                        <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Broccoli</a>
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Nutrition & Fitness Supplements</a>
+                                        </div>
                                     </li>
                                     <li class="hover-up">
-                                        <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Artichoke</a>
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Personal Care</a>
+                                        </div>
                                     </li>
                                     <li class="hover-up">
-                                        <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Celery</a>
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Ayurvedic Care</a>
+                                        </div>
                                     </li>
-                                    <li class="hover-up mr-0">
-                                        <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Spinach</a>
+                                    <li class="hover-up mt-2">
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Baby & Mom Care</a>
+                                        </div>
+                                    </li>
+                                    <li class="hover-up mt-2">
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Skin Care</a>
+                                        </div>
+                                    </li>
+                                    <li class="hover-up mt-2">
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Diabetic Care</a>
+                                        </div>
+                                    </li>
+                                    <li class="hover-up mt-2">
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Sexual Wellness</a>
+                                        </div>
+                                    </li>
+                                    <li class="hover-up mt-2">
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Short Term Ailments</a>
+                                        </div>
+                                    </li>
+                                    <li class="hover-up mt-2">
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Lifestyle Ailments</a>
+                                        </div>
+                                    </li>
+                                    <li class="hover-up mt-2">
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Home Care</a>
+                                        </div>
+                                    </li>
+                                    <li class="hover-up mt-2">
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Women Care</a>
+                                        </div>
+                                    </li>
+                                    <li class="hover-up mt-2">
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Health Food and Drinks</a>
+                                        </div>
+                                    </li>
+                                    <li class="hover-up mt-2">
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Ortho Care</a>
+                                        </div>
+                                    </li>
+                                    <li class="hover-up mt-2">
+                                        <div class="tags_items_a list_hiding">
+                                            <i class="fi-rs-cross mr-10 wrong_botton_shop"></i> <a href="blog-category-grid.html">Pet Care</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -1840,7 +1883,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <section class="section-padding pb-5">
+                        <!-- <section class="section-padding pb-5">
                             <div class="section-title">
                                 <h3 class="">Deals Of The Day</h3>
                                 <a class="show-all" href="shop-grid-right.html">
@@ -1998,7 +2041,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </section> -->
                         <!--End Deals-->
                     </div>
                     <div class="col-lg-1-5 primary-sidebar sticky-sidebar">
@@ -2006,20 +2049,60 @@
                             <h5 class="section-title style-1 mb-30">Category</h5>
                             <ul>
                                 <li>
-                                    <a href="shop-grid-right.html"> <img src="assets/imgs/theme/icons/category-1.svg" alt="" />Milks & Dairies</a><span class="count">30</span>
+                                    <a href="shop-grid-right.html"> <i class="fas fa-mortar-pestle text-green feature_icon_in_left3"></i>Ayurvedic Care</a><span class="count">68</span>
                                 </li>
                                 <li>
-                                    <a href="shop-grid-right.html"> <img src="assets/imgs/theme/icons/category-2.svg" alt="" />Clothing</a><span class="count">35</span>
+                                    <a href="shop-grid-right.html"> <img src="assets/imgs/icons/pngwing.com.png" alt="baby & Mom">Baby & Mom Care</a><span class="count">87</span>
                                 </li>
                                 <li>
-                                    <a href="shop-grid-right.html"> <img src="assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods </a><span class="count">42</span>
+                                    <a href="shop-grid-right.html"> <img src="assets/imgs/icons/NicePng_mallet-png_2729664.png" alt="Devices" />Devices</a><span class="count">30</span>
                                 </li>
                                 <li>
-                                    <a href="shop-grid-right.html"> <img src="assets/imgs/theme/icons/category-4.svg" alt="" />Baking material</a><span class="count">68</span>
+                                    <a href="shop-grid-right.html"> <i class="fas fa-syringe text-green feature_icon_in_left5"></i>Diabetic Care</a><span class="count">87</span>
                                 </li>
                                 <li>
-                                    <a href="shop-grid-right.html"> <img src="assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a><span class="count">87</span>
+                                    <a href="shop-grid-right.html"> <i class="fas fa-house-user text-green feature_icon_in_left9"></i>Home Care</a><span class="count">87</span>
                                 </li>
+                                <li>
+                                    <a href="shop-grid-right.html"> <i class="fas fa-utensils text-green feature_icon_in_left11"></i>Health Food and Drinks</a><span class="count">87</span>
+                                </li>
+                                <li>
+                                    <a href="shop-grid-right.html"> <i class="fab fa-slideshare text-green feature_icon_in_left8"></i>Lifestyle Ailments</a><span class="count">87</span>
+                                </li>
+                                <li>
+                                    <a href="shop-grid-right.html"> <i class="fab fa-nutritionix text-green feature_icon_in_left feature_icon_1"></i>Nutrition & <br> Fitness Supplements</a><span class="count">35</span>
+                                </li>
+                                <div class="more_slide_open" style="display: none">
+                                    <li>
+                                        <a href="shop-grid-right.html"> <i class="fas fa-hand-holding-medical text-green feature_icon_in_left12"></i>Ortho Care</a><span class="count">87</span>
+                                    </li>
+                                    <li>
+                                        <a href="shop-grid-right.html"> <i class="fas fa-user-shield text-green feature_icon_in_left2"></i>Personal Care</a><span class="count">42</span>
+                                    </li>
+                                    <li>
+                                        <a href="shop-grid-right.html"> <i class="fas fa-cat text-green feature_icon_in_left13"></i>Pet Care</a><span class="count">87</span>
+                                    </li>
+                                    <li>
+                                        <a href="shop-grid-right.html"> <i class="fas fa-user-friends text-green feature_icon_in_left6"></i>Sexual Wellness</a><span class="count">87</span>
+                                    </li>
+                                    <li>
+                                        <a href="shop-grid-right.html"> <i class="fas fa-user-md text-green feature_icon_in_left7"></i>Short Term Ailments</a><span class="count">87</span>
+                                    </li>
+                                    <li>
+                                        <a href="shop-grid-right.html"> <i class="fas fa-allergies text-green feature_icon_in_left4"></i>Skin Care</a><span class="count">87</span>
+                                    </li>
+                                    <li>
+                                        <a href="shop-grid-right.html"> <i class="fas fa-female text-green feature_icon_in_left10"></i>Women Care</a><span class="count">87</span>
+                                    </li>
+                                </div>
+                                <div class="more_categories d-flex justify-content-start align-items-center mt-15 list_icon">
+                                    <div class="ml-20">
+                                        <i class="fas fa-plus-circle text-green font_size"></i>
+                                    </div>
+                                    <div class="mb-1 pl-5">
+                                        <span class="heading-sm-1">Show more...</span>
+                                    </div>
+                                </div>
                             </ul>
                         </div>
                         <!-- Fillter By Price -->
@@ -2101,7 +2184,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="banner-img wow fadeIn mb-lg-0 animated d-lg-block d-none">
+                        <!-- <div class="banner-img wow fadeIn mb-lg-0 animated d-lg-block d-none">
                             <img src="assets/imgs/banner/banner-11.png" alt="" />
                             <div class="banner-text">
                                 <span>Oganic</span>
@@ -2111,7 +2194,7 @@
                                     Juice
                                 </h4>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -2267,13 +2350,13 @@
                         <div class="footer-link-widget col">
                             <h4 class="widget-title">Popular</h4>
                             <ul class="footer-list mb-sm-5 mb-md-0">
-                                <li><a href="#">Milk & Flavoured Milk</a></li>
-                                <li><a href="#">Butter and Margarine</a></li>
-                                <li><a href="#">Eggs Substitutes</a></li>
-                                <li><a href="#">Marmalades</a></li>
-                                <li><a href="#">Sour Cream and Dips</a></li>
-                                <li><a href="#">Tea & Kombucha</a></li>
-                                <li><a href="#">Cheese</a></li>
+                                <li><a href="shop-grid-right.html">Devices</a></li>
+                                <li><a href="Nutrition.html">Nutrition & Fitness Supplements</a></li>
+                                <li><a href="personalCare.html">Personal Care</a></li>
+                                <li><a href="AyurvedicCare.html">Ayurvedic Care</a></li>
+                                <li><a href="babyMomCare.html">Baby & Mom Care</a></li>
+                                <li><a href="skinCare.html">Skin Care</a></li>
+                                <li><a href="diabeticCare.html">Diabetic Care</a></li>
                             </ul>
                         </div>
                         <div class="footer-link-widget widget-install-app col">
@@ -2355,5 +2438,16 @@
         <!-- Template  JS -->
         <script src="./assets/js/main.js?v=2.1"></script>
         <script src="./assets/js/shop.js?v=2.1"></script>
+        <script src="assets/js/cart.js"></script>
+        <script>
+            $('.list_icon').click(function(){
+                $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle')
+            });
+
+            // Hiding list buttons in shop page
+            $('.wrong_botton_shop').on('click', function(event) {
+                $(this).parents('li').remove();
+            });
+        </script>
     </body>
 </html>

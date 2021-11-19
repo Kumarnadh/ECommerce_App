@@ -142,19 +142,21 @@
                                 </div> -->
                                 <div class="header-action-icon-2">
                                     <a href="shop-wishlist.html">
-                                        <img class="svgInject" alt="Nest" src="assets/imgs/theme/icons/icon-heart.svg" />
-                                        <span class="pro-count blue">6</span>
+                                        <img id="icon_wishList_white" class="svgInject" alt="Nest" src="assets/imgs/theme/icons/icon-heart.svg" />
+                                        <img id="icon_wishList_dark" class="d-none" alt="Nest" src="assets/imgs/theme/icons/icon-heart-dark.png" />
+                                        <span class="pro-count blue wish_list">0</span>
                                     </a>
                                     <a href="shop-wishlist.html"><span class="lable">Wishlist</span></a>
                                 </div>
                                 <div class="header-action-icon-2">
                                     <a class="mini-cart-icon" href="shop-cart.html">
-                                        <img alt="Nest" src="assets/imgs/theme/icons/icon-cart.svg" />
+                                        <img id="icon_cart_light" alt="cart" src="assets/imgs/theme/icons/icon-cart.svg" />
+                                        <img id="icon_cart_dark" class="d-none" alt="cart" src="assets/imgs/theme/icons/icon-cart-dark.png" />
                                         <span class="pro-count blue home"></span>
                                     </a>
                                     <a href="shop-cart.html"><span class="lable">Cart</span></a>
-                                    <div class="cart-dropdown-wrap cart-dropdown-hm2">
-                                        <div class="model_card_none overflow_button">
+                                    <div id="counter_disp_cart" class="cart-dropdown-wrap cart-dropdown-hm2">
+                                        <div id="style-3" class="model_card_none overflow_button">
                                         </div>
                                         <div class="shopping-cart-footer">
                                             <div class="shopping-cart-total">
@@ -283,7 +285,7 @@
                             <nav>
                                 <ul>
                                     <!-- <li class="hot-deals"><img src="assets/imgs/theme/icons/icon-hot.svg" alt="hot deals" /><a href="shop-grid-right.html">Hot Deals</a></li> -->
-                                    <!-- <li>
+                                    <li>
                                         <a class="active text-white" href="index.html">Home <i class="fi-rs-angle-down"></i></a>
                                         <ul class="sub-menu">
                                             <li><a href="index.html">Home 1</a></li>
@@ -291,7 +293,7 @@
                                             <li><a href="index-3.html">Home 3</a></li>
                                             <li><a href="index-4.html">Home 4</a></li>
                                         </ul>
-                                    </li> -->
+                                    </li>
                                     <li>
                                         <a href="page-about.html">About</a>
                                     </li>
@@ -462,41 +464,18 @@
                             <div class="header-action-icon-2">
                                 <a class="mini-cart-icon" href="#">
                                     <img alt="Nest" src="assets/imgs/theme/icons/icon-cart.svg" />
-                                    <span class="pro-count white">2</span>
+                                    <span class="pro-count blue home"></span>
                                 </a>
-                                <div class="cart-dropdown-wrap cart-dropdown-hm2">
-                                    <ul>
-                                        <li>
-                                            <div class="shopping-cart-img">
-                                                <a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-3.jpg" /></a>
-                                            </div>
-                                            <div class="shopping-cart-title">
-                                                <h4><a href="shop-product-right.html">Plain Striola Shirts</a></h4>
-                                                <h3><span>1 × </span>$800.00</h3>
-                                            </div>
-                                            <div class="shopping-cart-delete">
-                                                <a href="#"><i class="fi-rs-cross-small"></i></a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="shopping-cart-img">
-                                                <a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-4.jpg" /></a>
-                                            </div>
-                                            <div class="shopping-cart-title">
-                                                <h4><a href="shop-product-right.html">Macbook Pro 2022</a></h4>
-                                                <h3><span>1 × </span>$3500.00</h3>
-                                            </div>
-                                            <div class="shopping-cart-delete">
-                                                <a href="#"><i class="fi-rs-cross-small"></i></a>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                <a href="shop-cart.html"><span class="lable">Cart</span></a>
+                                <div id="counter_disp_cart_1" class="cart-dropdown-wrap cart-dropdown-hm2">
+                                    <div id="style-3" class="model_card_none overflow_button">
+                                    </div>
                                     <div class="shopping-cart-footer">
                                         <div class="shopping-cart-total">
-                                            <h4>Total <span>$383.00</span></h4>
+                                            <h4>Total <span class="cart_dd_total"></span><span>$</span></h4>
                                         </div>
                                         <div class="shopping-cart-button">
-                                            <a href="shop-cart.html">View cart</a>
+                                            <a href="shop-cart.html" class="outline">View cart</a>
                                             <a href="shop-checkout.html">Checkout</a>
                                         </div>
                                     </div>
@@ -784,6 +763,13 @@
     </div>
     <!--End header-->
     <main class="main">
+        <div class="cart_popup header-action-icon-2 d-flex justify-content-center align-items-center">
+            <a class="mini-cart-icon" href="shop-cart.html">
+                <img alt="Cart" class="cart_width" src="assets/imgs/theme/icons/icon-cart-pop.png" />
+                <span id="model_count" class="pro-count blue home home_popup">0</span>
+                <span class="tooltiptext">View Cart</span>
+            </a>
+        </div>
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
@@ -1644,13 +1630,13 @@
                     <div class="footer-link-widget col">
                         <h4 class="widget-title">Popular</h4>
                         <ul class="footer-list mb-sm-5 mb-md-0">
-                            <li><a href="#">Milk & Flavoured Milk</a></li>
-                            <li><a href="#">Butter and Margarine</a></li>
-                            <li><a href="#">Eggs Substitutes</a></li>
-                            <li><a href="#">Marmalades</a></li>
-                            <li><a href="#">Sour Cream and Dips</a></li>
-                            <li><a href="#">Tea & Kombucha</a></li>
-                            <li><a href="#">Cheese</a></li>
+                            <li><a href="shop-grid-right.html">Devices</a></li>
+                            <li><a href="Nutrition.html">Nutrition & Fitness Supplements</a></li>
+                            <li><a href="personalCare.html">Personal Care</a></li>
+                            <li><a href="AyurvedicCare.html">Ayurvedic Care</a></li>
+                            <li><a href="babyMomCare.html">Baby & Mom Care</a></li>
+                            <li><a href="skinCare.html">Skin Care</a></li>
+                            <li><a href="diabeticCare.html">Diabetic Care</a></li>
                         </ul>
                     </div>
                     <div class="footer-link-widget widget-install-app col">
@@ -1734,12 +1720,13 @@
     <script src="./assets/js/main.js?v=2.1"></script>
     <script src="./assets/js/shop.js?v=2.1"></script>
     <script src="assets/js/cart.js"></script>
+    <script src="assets/js/wishList.js"></script>
     <script>
-        let cartDetails = localStorage.getItem("shoppingCartDetails");
+    let cartDetails = localStorage.getItem("shoppingCartDetails");
+    counter_disp_cartEl = document.getElementById("counter_disp_cart");
     displayCart(cartDetails);
     function displayCart() {
     var cartArray = shoppingCart.listCart();
-    console.log(cartArray); 
     var output = "";
     for(var i in cartArray) {
       output += 
@@ -1776,6 +1763,11 @@
     $('.no-items').html(shoppingCart.totalCount());
     $('.total_checkout').html(shoppingCart.totalCart());
     $('.home').html(shoppingCart.totalCount());
+    if(shoppingCart.totalCount() == 0){
+      counter_disp_cartEl.classList.add("d-none");
+    } else if(shoppingCart.totalCount() > 0){
+      counter_disp_cartEl.classList.remove("d-none");
+    }
   }
 
   $('.cart-items').on("click", ".delete-item", function(event) {
@@ -1808,18 +1800,10 @@
   
   displayCart();
 //   Clear button
-  clear_allEl = document.getElementById("clear_all");
   cart_details_modelEl = document.getElementById("cart_details_model");
   sub_totalEl = document.getElementById("sub_total");
   totalEl = document.getElementById("total");
   no_itemsEl = document.getElementById("no-items");
-  clear_allEl.onclick = function(){
-      localStorage.clear();
-      cart_details_modelEl.classList.add("d-none");
-      sub_totalEl.textContent = 0;
-      totalEl.textContent = 0;
-      no_itemsEl.textContent = 0;
-  }
 
   // Delete item button in model
   
@@ -1828,6 +1812,18 @@
     shoppingCart.removeItemFromCartAll(name);
     displayCart();
   })
+
+  // WishList Functionality
+
+  icon_wishList_darkEl = document.getElementById("icon_wishList_dark");
+  icon_wishList_whiteEl = document.getElementById("icon_wishList_white");
+
+  if (shoppingWishList.totalCount() > 0){
+    icon_wishList_darkEl.classList.remove("d-none");
+    icon_wishList_whiteEl.classList.add("d-none");
+  }
+
+  console.log(shoppingWishList.totalCount());
     </script>
 </body>
 

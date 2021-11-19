@@ -7,11 +7,12 @@ var shoppingCart = (function() {
     cart = [];
     
     // Constructor
-    function Item(name, price, imgSrc, count) {
+    function Item(name, price, imgSrc, width, count) {
       this.name = name;
       this.price = price;
       this.count = count;
       this.imgSrc = imgSrc;
+      this.width = width;
     }
     
     // Save cart
@@ -34,7 +35,7 @@ var shoppingCart = (function() {
     var obj = {};
     
     // Add to cart
-    obj.addItemToCart = function(name, price, imgSrc, count) {
+    obj.addItemToCart = function(name, price, imgSrc, width, count) {
       for(var item in cart) {
         if(cart[item].name === name) {
           cart[item].count ++;
@@ -42,7 +43,7 @@ var shoppingCart = (function() {
           return;
         }
       }
-      var item = new Item(name, price, imgSrc, count);
+      var item = new Item(name, price, imgSrc, width, count);
       cart.push(item);
       saveCart();
     }
@@ -123,12 +124,18 @@ var shoppingCart = (function() {
   })();
 
 //   cart Add details
-$('.add').click(function(event) {
+counter_disp_cartEl = document.getElementById("counter_disp_cart");
+counter_disp_cart_1El = document.getElementById("counter_disp_cart_1");
+icon_cart_darkEl = document.getElementById("icon_cart_dark");
+icon_cart_lightEl = document.getElementById("icon_cart_light");
+
+$('.add_cart').click(function(event) {
     event.preventDefault();
     var name = $(this).data('name');
     var price = Number($(this).data('price'));
     var imgSrc = $(this).data('image');
-    shoppingCart.addItemToCart(name, price, imgSrc, 1);
+    var width = $(this).data('width');
+    shoppingCart.addItemToCart(name, price, imgSrc, width,1);
     displayCart();
   });
 
@@ -137,7 +144,7 @@ $('.add').click(function(event) {
     var output = "";
     for(var i in cartArray) {
       output += "<br><div class='d-flex justify-content-between'>"
-        + `<p><a href="shop-product-right.html"><img class='img_width' alt="Nest" src="${cartArray[i].imgSrc}" /></a></p><br>`
+        + `<p><a href="shop-product-right.html"><img class='img_width' alt="E-Commerce" src="${cartArray[i].imgSrc}" /></a></p><br>`
         + `<p class="shopping-cart-title w-50"><a href="shop-product-right.html">${cartArray[i].name}
         </a>
         </p>`
@@ -155,6 +162,27 @@ $('.add').click(function(event) {
     $('.model_card_none').html(output);
     $('.home').html(shoppingCart.totalCount());
     $('.cart_dd_total').html(shoppingCart.totalCart());
+    if(shoppingCart.totalCount() == 0){
+      counter_disp_cartEl.classList.add("d-none");
+    } else if(shoppingCart.totalCount() > 0){
+      counter_disp_cartEl.classList.remove("d-none");
+    }
+
+    if(shoppingCart.totalCount() == 0){
+      counter_disp_cart_1El.classList.add("d-none");
+    } else if(shoppingCart.totalCount() > 0){
+      counter_disp_cart_1El.classList.remove("d-none");
+    }
+
+    if (shoppingCart.totalCount() > 0){
+      icon_cart_darkEl.classList.remove("d-none");
+      icon_cart_lightEl.classList.add("d-none");
+    }
+
+    if (shoppingCart.totalCount() === 0){
+      icon_cart_darkEl.classList.add("d-none");
+      icon_cart_lightEl.classList.remove("d-none");
+    }
   }
 
   // Delete item button
@@ -187,4 +215,14 @@ $('.add').click(function(event) {
     displayCart();
   });
   
-  displayCart(); 
+  displayCart();
+
+  // WishList Functionality
+
+  icon_wishList_darkEl = document.getElementById("icon_wishList_dark");
+  icon_wishList_whiteEl = document.getElementById("icon_wishList_white");
+
+  if (shoppingWishList.totalCount() > 0){
+    icon_wishList_darkEl.classList.remove("d-none");
+    icon_wishList_whiteEl.classList.add("d-none");
+  }

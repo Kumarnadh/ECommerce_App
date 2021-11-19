@@ -280,19 +280,21 @@
 									</div> -->
 									<div class="header-action-icon-2">
 										<a href="shop-wishlist.html">
-											<img class="svgInject" alt="Nest" src="assets/imgs/theme/icons/icon-heart.svg" />
-											<span class="pro-count blue">6</span>
+											<img id="icon_wishList_white" class="svgInject" alt="Nest" src="assets/imgs/theme/icons/icon-heart.svg" />
+											<img id="icon_wishList_dark" class="d-none" alt="Nest" src="assets/imgs/theme/icons/icon-heart-dark.png" />
+											<span class="pro-count blue wish_list">0</span>
 										</a>
 										<a href="shop-wishlist.html"><span class="lable">Wishlist</span></a>
 									</div>
 									<div class="header-action-icon-2">
 										<a class="mini-cart-icon" href="shop-cart.html">
-											<img alt="Nest" src="assets/imgs/theme/icons/icon-cart.svg" />
+											<img id="icon_cart_light" alt="cart" src="assets/imgs/theme/icons/icon-cart.svg" />
+											<img id="icon_cart_dark" class="d-none" alt="cart" src="assets/imgs/theme/icons/icon-cart-dark.png" />
 											<span id="model_count" class="pro-count blue home">0</span>
 										</a>
 										<a href="shop-cart.html"><span class="lable">Cart</span></a>
-										<div class="cart-dropdown-wrap cart-dropdown-hm2">
-											<div class="model_card_none overflow_button">
+										<div id="counter_disp_cart" class="cart-dropdown-wrap cart-dropdown-hm2">
+											<div id="style-3" class="model_card_none overflow_button">
 											</div>
 											<div class="shopping-cart-footer">
 												<div class="shopping-cart-total">
@@ -421,19 +423,19 @@
 								<nav>
 									<ul>
 										<!-- <li class="hot-deals"><img src="assets/imgs/theme/icons/icon-hot.svg" alt="hot deals" /><a href="shop-grid-right.html">Hot Deals</a></li> -->
-										<!-- <li>
-											<a class="active text-white" href="index.html">Home <i class="fi-rs-angle-down"></i></a>
-											<ul class="sub-menu">
+										<li>
+											<a class="active text-white" href="index.html">Home</a>
+											<!-- <ul class="sub-menu">
 												<li><a href="index.html">Home 1</a></li>
 												<li><a href="index-2.html">Home 2</a></li>
 												<li><a href="index-3.html">Home 3</a></li>
 												<li><a href="index-4.html">Home 4</a></li>
-											</ul>
-										</li> -->
+											</ul> -->
+										</li>
 										<li>
 											<a href="page-about.html">About</a>
 										</li>
-										<li>
+										<!-- <li>
 											<a href="shop-grid-right.html">Shop <i class="fi-rs-angle-down"></i></a>
 											<ul class="sub-menu">
 												<li><a href="shop-grid-right.html">Shop Grid – Right Sidebar</a></li>
@@ -456,7 +458,7 @@
 												<li><a href="shop-checkout.html">Shop – Checkout</a></li>
 												<li><a href="shop-compare.html">Shop – Compare</a></li>
 											</ul>
-										</li>
+										</li> -->
 										<!-- <li>
                                             <a href="#">Vendors <i class="fi-rs-angle-down"></i></a>
                                             <ul class="sub-menu">
@@ -468,45 +470,48 @@
                                                 <li><a href="vendor-guide.html">Vendor Guide</a></li>
                                             </ul>
                                         </li> -->
-										<!-- <li class="position-static">
+										<li class="position-static">
 											<a href="#">Mega menu <i class="fi-rs-angle-down"></i></a>
 											<ul class="mega-menu">
 												<li class="sub-mega-menu sub-mega-menu-width-22">
-													<a class="menu-title" href="#">Fruit & Vegetables</a>
+													<a class="menu-title" href="#">Devices</a>
 													<ul>
-														<li><a href="shop-product-right.html">Meat & Poultry</a></li>
-														<li><a href="shop-product-right.html">Fresh Vegetables</a></li>
-														<li><a href="shop-product-right.html">Herbs & Seasonings</a></li>
-														<li><a href="shop-product-right.html">Cuts & Sprouts</a></li>
-														<li><a href="shop-product-right.html">Exotic Fruits & Veggies</a></li>
-														<li><a href="shop-product-right.html">Packaged Produce</a></li>
+														<li><a href="shop-product-right.html">Glucometers</a></li>
+														<li><a href="shop-product-right.html">Sexual Wellness</a></li>
+														<li><a href="shop-product-right.html">Bp Monitors</a></li>
+														<li><a href="shop-product-right.html">Health Care Devices</a></li>
+														<li><a href="shop-product-right.html">Thermometers</a></li>
+														<li><a href="shop-product-right.html">Nebulizers & Vaporizers</a></li>
+														<li><a href="shop-product-right.html">Oximeters</a></li>
 													</ul>
 												</li>
 												<li class="sub-mega-menu sub-mega-menu-width-22">
-													<a class="menu-title" href="#">Breakfast & Dairy</a>
+													<a class="menu-title" href="#">Nutrition & Fitness Supplements</a>
 													<ul>
-														<li><a href="shop-product-right.html">Milk & Flavoured Milk</a></li>
-														<li><a href="shop-product-right.html">Butter and Margarine</a></li>
-														<li><a href="shop-product-right.html">Eggs Substitutes</a></li>
-														<li><a href="shop-product-right.html">Marmalades</a></li>
-														<li><a href="shop-product-right.html">Sour Cream</a></li>
-														<li><a href="shop-product-right.html">Cheese</a></li>
+														<li><a href="shop-product-right.html">Nutrition Drinks</a></li>
+														<li><a href="shop-product-right.html">Multi Vitamins</a></li>
+														<li><a href="shop-product-right.html">Immunity Boosters</a></li>
+														<li><a href="shop-product-right.html">Speciality Supplements</a></li>
+														<li><a href="shop-product-right.html">Protien Supplements</a></li>
+														<li><a href="shop-product-right.html">Weight Management</a></li>
+														<li><a href="shop-product-right.html">Health Food & Drinks</a></li>
 													</ul>
 												</li>
 												<li class="sub-mega-menu sub-mega-menu-width-22">
-													<a class="menu-title" href="#">Meat & Seafood</a>
+													<a class="menu-title" href="#">Personal Care</a>
 													<ul>
-														<li><a href="shop-product-right.html">Breakfast Sausage</a></li>
-														<li><a href="shop-product-right.html">Dinner Sausage</a></li>
-														<li><a href="shop-product-right.html">Chicken</a></li>
-														<li><a href="shop-product-right.html">Sliced Deli Meat</a></li>
-														<li><a href="shop-product-right.html">Wild Caught Fillets</a></li>
-														<li><a href="shop-product-right.html">Crab and Shellfish</a></li>
+														<li><a href="shop-product-right.html">Weight Management</a></li>
+														<li><a href="shop-product-right.html">Women Care</a></li>
+														<li><a href="shop-product-right.html">Oral Care</a></li>
+														<li><a href="shop-product-right.html">Men Care</a></li>
+														<li><a href="shop-product-right.html">Adult Diapers</a></li>
+														<li><a href="shop-product-right.html">Skin Care</a></li>
+														<li><a href="shop-product-right.html">Hair Care</a></li>
 													</ul>
 												</li>
 												<li class="sub-mega-menu sub-mega-menu-width-34">
 													<div class="menu-banner-wrap">
-														<a href="shop-product-right.html"><img src="assets/imgs/banner/banner-menu.png" alt="Nest" /></a>
+														<a href="shop-product-right.html"><img src="assets/imgs/banner/banner-menu-01.png" alt="Nest" /></a>
 														<div class="menu-banner-content">
 															<h4>Hot deals</h4>
 															<h3>
@@ -529,7 +534,7 @@
 													</div>
 												</li>
 											</ul>
-										</li> -->
+										</li>
 										<!-- <li>
 											<a href="blog-category-grid.html">Blog <i class="fi-rs-angle-down"></i></a>
 											<ul class="sub-menu">
@@ -550,25 +555,25 @@
 										<li>
 											<a href="#">Pages <i class="fi-rs-angle-down"></i></a>
 											<ul class="sub-menu">
-												<!-- <li><a href="page-about.html">About Us</a></li>
-												<li><a href="page-contact.html">Contact</a></li>
-												<li><a href="page-account.html">My Account</a></li>
-												<li><a href="page-login.html">Login</a></li>
-												<li><a href="page-register.html">Register</a></li>
-												<li><a href="page-purchase-guide.html">Purchase Guide</a></li> -->
+												<!-- <li><a href="page-about.html">About Us</a></li> -->
+												<!-- <li><a href="page-contact.html">Contact</a></li> -->
+												<!-- <li><a href="page-account.html">My Account</a></li> -->
+												<!-- <li><a href="page-login.html">Login</a></li> -->
+												<!-- <li><a href="page-register.html">Register</a></li> -->
+												<li><a href="page-purchase-guide.html">Purchase Guide</a></li>
 												<li><a href="page-privacy-policy.html">Privacy Policy</a></li>
-												<!-- <li><a href="page-terms.html">Terms of Service</a></li>
-												<li><a href="page-404.html">404 Page</a></li> -->
+												<li><a href="page-terms.html">Terms of Service</a></li>
+												<!-- <li><a href="page-404.html">404 Page</a></li> -->
 											</ul>
 										</li>
 										<li>
 											<a href="#">Vendors <i class="fi-rs-angle-down"></i></a>
 											<ul class="sub-menu">
-												<li><a href="vendors-grid.html">Vendors Grid</a></li>
-												<li><a href="vendors-list.html">Vendors List</a></li>
-												<li><a href="vendor-details-1.html">Vendor Details 01</a></li>
+												<li><a href="vendors-grid.html">Vendors Registration</a></li>
+												<li><a href="vendors-list.html">Vendors Login</a></li>
+												<!-- <li><a href="vendor-details-1.html">Vendor Details 01</a></li>
 												<li><a href="vendor-details-2.html">Vendor Details 02</a></li>
-												<li><a href="vendor-dashboard.html">Vendor Dashboard</a></li>
+												<li><a href="vendor-dashboard.html">Vendor Dashboard</a></li> -->
 											</ul>
 										</li>
 										<li>
@@ -600,41 +605,18 @@
 								<div class="header-action-icon-2">
 									<a class="mini-cart-icon" href="#">
 										<img alt="Nest" src="assets/imgs/theme/icons/icon-cart.svg" />
-										<span class="pro-count white">2</span>
+										<span class="pro-count home white">2</span>
 									</a>
-									<div class="cart-dropdown-wrap cart-dropdown-hm2">
-										<ul>
-											<li>
-												<div class="shopping-cart-img">
-													<a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-3.jpg" /></a>
-												</div>
-												<div class="shopping-cart-title">
-													<h4><a href="shop-product-right.html">Plain Striola Shirts</a></h4>
-													<h3><span>1 × </span>$800.00</h3>
-												</div>
-												<div class="shopping-cart-delete">
-													<a href="#"><i class="fi-rs-cross-small"></i></a>
-												</div>
-											</li>
-											<li>
-												<div class="shopping-cart-img">
-													<a href="shop-product-right.html"><img alt="Nest" src="assets/imgs/shop/thumbnail-4.jpg" /></a>
-												</div>
-												<div class="shopping-cart-title">
-													<h4><a href="shop-product-right.html">Macbook Pro 2022</a></h4>
-													<h3><span>1 × </span>$3500.00</h3>
-												</div>
-												<div class="shopping-cart-delete">
-													<a href="#"><i class="fi-rs-cross-small"></i></a>
-												</div>
-											</li>
-										</ul>
+									<a href="shop-cart.html"><span class="lable">Cart</span></a>
+									<div id="counter_disp_cart_1" class="cart-dropdown-wrap cart-dropdown-hm2">
+										<div id="style-3" class="model_card_none overflow_button">
+										</div>
 										<div class="shopping-cart-footer">
 											<div class="shopping-cart-total">
-												<h4>Total <span>$383.00</span></h4>
+												<h4>Total <span>$<span class="cart_dd_total"></span></span></h4>
 											</div>
 											<div class="shopping-cart-button">
-												<a href="shop-cart.html">View cart</a>
+												<a href="shop-cart.html" class="outline">View cart</a>
 												<a href="shop-checkout.html">Checkout</a>
 											</div>
 										</div>
@@ -774,16 +756,19 @@
 						<!-- mobile menu start -->
 						<nav>
                             <ul class="mobile-menu font-heading">
+								<li>
+									<a class="active" href="index.html">Home</a>
+									<!-- <ul class="sub-menu">
+										<li><a href="index.html">Home 1</a></li>
+										<li><a href="index-2.html">Home 2</a></li>
+										<li><a href="index-3.html">Home 3</a></li>
+										<li><a href="index-4.html">Home 4</a></li>
+									</ul> -->
+								</li>
                                 <li class="menu-item-has-children">
                                     <a href="index.html">About</a>
-                                    <ul class="dropdown">
-                                        <li><a href="index.html">Home 1</a></li>
-                                        <li><a href="index-2.html">Home 2</a></li>
-                                        <li><a href="index-3.html">Home 3</a></li>
-                                        <li><a href="index-4.html">Home 4</a></li>
-                                    </ul>
                                 </li>
-                                <li class="menu-item-has-children">
+                                <!-- <li class="menu-item-has-children">
                                     <a href="shop-grid-right.html">shop</a>
                                     <ul class="dropdown">
                                         <li><a href="shop-grid-right.html">Shop Grid – Right Sidebar</a></li>
@@ -806,40 +791,187 @@
                                         <li><a href="shop-checkout.html">Shop – Checkout</a></li>
                                         <li><a href="shop-compare.html">Shop – Compare</a></li>
                                     </ul>
-                                </li>                                
-                                <!-- <li class="menu-item-has-children">
+                                </li>                                 -->
+                                <li class="menu-item-has-children">
                                     <a href="#">Mega menu</a>
                                     <ul class="dropdown">
                                         <li class="menu-item-has-children">
-                                            <a href="#">Women's Fashion</a>
+                                            <a href="#">Devices</a>
                                             <ul class="dropdown">
-                                                <li><a href="shop-product-right.html">Dresses</a></li>
-                                                <li><a href="shop-product-right.html">Blouses & Shirts</a></li>
-                                                <li><a href="shop-product-right.html">Hoodies & Sweatshirts</a></li>
-                                                <li><a href="shop-product-right.html">Women's Sets</a></li>
+                                                <li><a href="shop-product-right.html">Glucometers</a></li>
+                                                <li><a href="shop-product-right.html"></a>Sexual Wellness</li>
+                                                <li><a href="shop-product-right.html"></a>Bp Monitors</li>
+                                                <li><a href="shop-product-right.html"></a>Health Care Devices</li>
+												<li><a href="shop-product-right.html">Thermometers</a></li>
+												<li><a href="shop-product-right.html">Nebulizers & Vaporizers</a></li>
+												<li><a href="shop-product-right.html">Oximeters</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#">Men's Fashion</a>
+                                            <a href="#">Nutrition & Fitness Supplements</a>
                                             <ul class="dropdown">
-                                                <li><a href="shop-product-right.html">Jackets</a></li>
-                                                <li><a href="shop-product-right.html">Casual Faux Leather</a></li>
-                                                <li><a href="shop-product-right.html">Genuine Leather</a></li>
+                                                <li><a href="shop-product-right.html">Nutrition Drinks</a></li>
+                                                <li><a href="shop-product-right.html">Multi Vitamins</a></li>
+                                                <li><a href="shop-product-right.html">Immunity Boosters</a></li>
+												<li><a href="shop-product-right.html">Speciality Supplements</a></li>
+												<li><a href="shop-product-right.html">Protien Supplements</a></li>
+												<li><a href="shop-product-right.html">Weight Management</a></li>
+												<li><a href="shop-product-right.html">Health Food & Drinks</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#">Technology</a>
+                                            <a href="#">Personal Care</a>
                                             <ul class="dropdown">
-                                                <li><a href="shop-product-right.html">Gaming Laptops</a></li>
+                                                <li><a href="shop-product-right.html">Weight Management</a></li>
+                                                <li><a href="shop-product-right.html">Women Care</a></li>
+                                                <li><a href="shop-product-right.html">Oral Care</a></li>
+                                                <li><a href="shop-product-right.html">Men Care</a></li>
+                                                <li><a href="shop-product-right.html">Adult Diapers</a></li>
+												<li><a href="shop-product-right.html">Skin Care</a></li>
+												<li><a href="shop-product-right.html">Hair Care</a></li>
+                                            </ul>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#">Ayurvedic Care</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop-product-right.html">Health Care</a></li>
+                                                <li><a href="shop-product-right.html">Food Supplements & Immunity</a></li>
+                                                <li><a href="shop-product-right.html">Herbs</a></li>
+                                                <li><a href="shop-product-right.html">Persolnal Care</a></li>
+                                                <li><a href="shop-product-right.html">Sexal Wellness</a></li>
+												<li><a href="shop-product-right.html">Health Drinks</a></li>
+												<li><a href="shop-product-right.html">Homeopathy</a></li>
+                                            </ul>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#">Baby & Mom Care</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop-product-right.html">Baby Bath & Skin Essentials</a></li>
+                                                <li><a href="shop-product-right.html">Baby Food</a></li>
+                                                <li><a href="shop-product-right.html">Baby Diapers</a></li>
+                                                <li><a href="shop-product-right.html">Feeding & Oral Health</a></li>
+                                                <li><a href="shop-product-right.html">Baby Healthcare</a></li>
+												<li><a href="shop-product-right.html">Mother Care</a></li>
+												<li><a href="shop-product-right.html">Baby Wipers</a></li>
+                                            </ul>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#">Skin Care</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop-product-right.html">Face Wash</a></li>
+                                                <li><a href="shop-product-right.html">Moisturizers, Lotions & Oils</a></li>
+                                                <li><a href="shop-product-right.html">Bathing</a></li>
+                                                <li><a href="shop-product-right.html">Talcum Powder</a></li>
+                                                <li><a href="shop-product-right.html">Facial Masks</a></li>
+												<li><a href="shop-product-right.html">Offers - Skin Care</a></li>
+												<li><a href="shop-product-right.html">Face Wipes</a></li>
+												<li><a href="shop-product-right.html">Skin Creams & Hair Removal</a></li>
+                                            </ul>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#">Diabetic Care</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop-product-right.html">Devices</a></li>
                                                 <li><a href="shop-product-right.html">Ultraslim Laptops</a></li>
-                                                <li><a href="shop-product-right.html">Tablets</a></li>
-                                                <li><a href="shop-product-right.html">Laptop Accessories</a></li>
-                                                <li><a href="shop-product-right.html">Tablet Accessories</a></li>
+                                                <li><a href="shop-product-right.html">Sugar Substitutes</a></li>
+                                                <li><a href="shop-product-right.html">Nutrition Food</a></li>
+                                                <li><a href="shop-product-right.html">Supplements</a></li>
+												<li><a href="shop-product-right.html">Diabetic & Ortho Footwear</a></li>
+                                            </ul>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#">Sexual Wellness</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop-product-right.html">Sexual Toys and Devices</a></li>
+                                                <li><a href="shop-product-right.html">Lubricants and more</a></li>
+                                                <li><a href="shop-product-right.html">Condoms</a></li>
+                                                <li><a href="shop-product-right.html">Performance boosters</a></li>
+                                                <li><a href="shop-product-right.html">Pregnancy Support</a></li>
+                                            </ul>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#">Short Term Ailments</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop-product-right.html">Stomach Care</a></li>
+                                                <li><a href="shop-product-right.html">Pain Relief</a></li>
+                                                <li><a href="shop-product-right.html">Cold, Cough & Fever</a></li>
+                                                <li><a href="shop-product-right.html">Bone, Joint & Muscle Care</a></li>
+                                                <li><a href="shop-product-right.html">First Aid</a></li>
+												<li><a href="shop-product-right.html">Anti Fungal</a></li>
+												<li><a href="shop-product-right.html">Eye Care</a></li>
+												<li><a href="shop-product-right.html">ENT Care</a></li>
+                                            </ul>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#">Lifestyle Ailments</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop-product-right.html">Diabetic Care</a></li>
+                                                <li><a href="shop-product-right.html">Ortho Care</a></li>
+                                                <li><a href="shop-product-right.html">Respiratory Care</a></li>
+                                                <li><a href="shop-product-right.html">De addiction</a></li>
+                                                <li><a href="shop-product-right.html">Heart Care</a></li>
+												<li><a href="shop-product-right.html">Mind Wellness</a></li>
+												<li><a href="shop-product-right.html">Liver Care</a></li>
+												<li><a href="shop-product-right.html">Kidney Care</a></li>
+                                            </ul>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#">Home Care</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop-product-right.html">Surface Cleaners</a></li>
+                                                <li><a href="shop-product-right.html">Disinfectants</a></li>
+                                                <li><a href="shop-product-right.html">Tissues & Wipes</a></li>
+                                                <li><a href="shop-product-right.html">Pest Control</a></li>
+                                                <li><a href="shop-product-right.html">Home Hygiene</a></li>
+                                            </ul>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#">Women Care</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop-product-right.html">Facial Masks</a></li>
+                                                <li><a href="shop-product-right.html">Feminine Hygiene</a></li>
+                                                <li><a href="shop-product-right.html">Women Skin Care</a></li>
+                                                <li><a href="shop-product-right.html">Sexual Wellness</a></li>
+                                                <li><a href="shop-product-right.html">Mother Care</a></li>
+												<li><a href="shop-product-right.html">Female Test Kits</a></li>
+												<li><a href="shop-product-right.html">Face Wipes</a></li>
+												<li><a href="shop-product-right.html">Women Care Supplements</a></li>
+
+                                            </ul>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#">Health Food and Drinks</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop-product-right.html">Weight Management</a></li>
+                                                <li><a href="shop-product-right.html">Baby Food</a></li>
+                                                <li><a href="shop-product-right.html">Sugar Substitutes</a></li>
+                                                <li><a href="shop-product-right.html">Health Drinks</a></li>
+                                                <li><a href="shop-product-right.html">Diabetic Care</a></li>
+												<li><a href="shop-product-right.html">Health Food</a></li>
+												<li><a href="shop-product-right.html">Maternity Care</a></li>
+                                            </ul>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#">Ortho Care</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop-product-right.html">Orthopaedic Supports</a></li>
+                                                <li><a href="shop-product-right.html">Ortho Pain Relief</a></li>
+                                                <li><a href="shop-product-right.html">Ortho Foot Care</a></li>
+                                                <li><a href="shop-product-right.html">Ortho Supplements</a></li>
+                                            </ul>
+                                        </li>
+										<li class="menu-item-has-children">
+                                            <a href="#">Pet Care</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop-product-right.html">Pet Grooming</a></li>
+                                                <li><a href="shop-product-right.html">Pet Food & Nutrition</a></li>
+                                                <li><a href="shop-product-right.html">Pet Health Supplements</a></li>
+                                                <li><a href="shop-product-right.html">Pet Accessories</a></li>
                                             </ul>
                                         </li>
                                     </ul>
-                                </li> -->
-                                <li class="menu-item-has-children">
+                                </li>
+                                <!-- <li class="menu-item-has-children">
                                     <a href="blog-category-fullwidth.html">Blog</a>
                                     <ul class="dropdown">
                                         <li><a href="blog-category-grid.html">Blog Category Grid</a></li>
@@ -855,30 +987,30 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li class="menu-item-has-children">
                                     <a href="#">Pages</a>
                                     <ul class="dropdown">
-                                        <li><a href="page-about.html">About Us</a></li>
+                                        <!-- <li><a href="page-about.html">About Us</a></li>
                                         <li><a href="page-contact.html">Contact</a></li>
                                         <li><a href="page-account.html">My Account</a></li>
                                         <li><a href="page-login.html">Login</a></li>
-                                        <li><a href="page-register.html">Register</a></li>
+                                        <li><a href="page-register.html">Register</a></li> -->
                                         <li><a href="page-purchase-guide.html">Purchase Guide</a></li>
                                         <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
                                         <li><a href="page-terms.html">Terms of Service</a></li>
-                                        <li><a href="page-404.html">404 Page</a></li>
+                                        <!-- <li><a href="page-404.html">404 Page</a></li> -->
                                     </ul>
                                 </li>
 								<li class="menu-item-has-children">
                                     <a href="#">Vendors</a>
                                     <ul class="dropdown">
-                                        <li><a href="vendors-grid.html">Vendors Grid</a></li>
-                                        <li><a href="vendors-list.html">Vendors List</a></li>
-                                        <li><a href="vendor-details-1.html">Vendor Details 01</a></li>
+                                        <li><a href="vendors-grid.html">Vendors Registration</a></li>
+                                        <li><a href="vendors-list.html">Vendors Login</a></li>
+                                        <!-- <li><a href="vendor-details-1.html">Vendor Details 01</a></li>
                                         <li><a href="vendor-details-2.html">Vendor Details 02</a></li>
                                         <li><a href="vendor-dashboard.html">Vendor Dashboard</a></li>
-                                        <li><a href="vendor-guide.html">Vendor Guide</a></li>
+                                        <li><a href="vendor-guide.html">Vendor Guide</a></li> -->
                                     </ul>
                                 </li>
 								<li class="menu-item-has-children">
@@ -924,15 +1056,16 @@
 		<main class="main">
 			<div class="cart_popup header-action-icon-2 d-flex justify-content-center align-items-center">
 				<a class="mini-cart-icon" href="shop-cart.html">
-					<img alt="Nest" src="assets/imgs/theme/icons/icon-cart.svg" />
+					<img alt="cart" class="cart_width" src="assets/imgs/theme/icons/icon-cart-pop.png" />
 					<span id="model_count" class="pro-count blue home home_popup">0</span>
+					<span class="tooltiptext">View Cart</span>
 				</a>
 			</div>
 			<section class="home-slider position-relative mb-30">
 				<div class="container">
 					<div class="home-slide-cover mt-30">
 						<div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
-							<div class="single-hero-slider single-animation-wrap" style="background-image: url(assets/imgs/banner/banner3.jpg); height: 600px;">
+							<div class="single-hero-slider single-animation-wrap" style="background-image: url(assets/imgs/banner/bannerNew.jpg);">
 								<div class="slider-content">
 									<h1 class="display-2 mb-40">
 										Don’t miss amazing<br />
@@ -945,7 +1078,7 @@
 									</form>
 								</div>
 							</div>
-							<div class="single-hero-slider single-animation-wrap" style="background-image: url(assets/imgs/banner/banner2.jpg); height: 600px;">
+							<div class="single-hero-slider single-animation-wrap" style="background-image: url(assets/imgs/banner/bannerNew2.jpg);">
 								<div class="slider-content">
 									<h1 class="display-2 mb-40">
 										Order Medicines<br />
@@ -1111,7 +1244,7 @@
 								<img src="assets/imgs/shop/OrderMedicine.jpg" alt="Order_Medicines" />
 								<div class="banner-text">
 									<h4>
-										Medicine Healthcare Products
+										Medicine Healthcare <br> Products
 									</h4>
 									<a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
 								</div>
@@ -1182,12 +1315,12 @@
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
 												<a href="shop-product-right.html">
-													<img class="default-img" src="assets/imgs/shop/OrderMedicine.jpg" alt="" />
+													<img class="default-img" src="assets/imgs/shop/product-1-1.jpg" alt="" />
 													<img class="hover-img" src="assets/imgs/shop/product-1-2.jpg" alt="" />
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-1-1.jpg" data-width1="90%" data-name1="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price1="28.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1215,7 +1348,7 @@
 													<span class="old-price">$32.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/OrderMedicine.jpg" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-1-1.jpg" data-width="90%" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1232,7 +1365,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-2-1.jpg" data-width1="80%" data-name1="All Natural Italian-Style Chicken Meatballs" data-price1="52.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1260,7 +1393,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-2-1.jpg" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-2-1.jpg" data-width="80%" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 												<!-- href="shop-cart.html" -->
 											</div>
@@ -1278,7 +1411,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-3-1.jpg" data-width1="85%" data-name1="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price1="48.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1306,7 +1439,7 @@
 													<span class="old-price">$52.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-3-1.jpg" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-3-1.jpg" data-width="85%" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1323,7 +1456,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-4-1.jpg" data-width1="90%" data-name1="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price1="17.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1348,7 +1481,7 @@
 													<span class="old-price">$19.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-4-1.jpg" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-4-1.jpg" data-width="90%" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1365,7 +1498,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-5-1.jpg" data-width1="90%" data-name1="Blue Diamond Almonds Lightly Salted Vegetables" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1393,7 +1526,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-5-1.jpg" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-5-1.jpg" data-width="90%" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1410,7 +1543,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-6-1.jpg" data-width1="90%" data-name1="Chobani Complete Vanilla Greek Yogurt" data-price1="54.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1435,7 +1568,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-6-1.jpg" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-6-1.jpg" data-width="90%" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1452,7 +1585,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-7-1.jpg" data-width1="90%" data-name1="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price1="32.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1477,7 +1610,7 @@
 													<span class="old-price">$33.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-7-1.jpg" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-7-1.jpg" data-width="90%" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1494,7 +1627,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-8-1.jpg" data-width1="90%" data-name1="Encore Seafoods Stuffed Alaskan Salmon" data-price1="35.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1522,7 +1655,7 @@
 													<span class="old-price">$37.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-8-1.jpg" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-8-1.jpg" data-width="90%" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1539,7 +1672,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-9-1.jpg" data-width1="90%" data-name1="Gorton’s Beer Battered Fish Fillets with soft paper" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1567,7 +1700,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-9-1.jpg" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-9-1.jpg" data-width="90%" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1584,7 +1717,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-10-1.jpg" data-width1="50%" data-name1="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price1="22.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1609,7 +1742,7 @@
 													<span class="old-price">$24.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-10-1.jpg" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-10-1.jpg" data-width="50%" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1632,7 +1765,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-10-1.jpg" data-width1="90%" data-name1="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price1="28.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1660,7 +1793,7 @@
 													<span class="old-price">$32.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-10-1.jpg" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-10-1.jpg" data-width="90%" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1677,7 +1810,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-12-1.jpg" data-width1="80%" data-name1="All Natural Italian-Style Chicken Meatballs" data-price1="52.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1705,7 +1838,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-12-1.jpg" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-12-1.jpg" data-width="80%" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1722,7 +1855,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-13-1.jpg" data-width1="85%" data-name1="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price1="48.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1750,7 +1883,7 @@
 													<span class="old-price">$52.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-13-1.jpg" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-13-1.jpg" data-width="85%" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1767,7 +1900,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-14-1.jpg" data-width1="90%" data-name1="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price1="17.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1792,7 +1925,7 @@
 													<span class="old-price">$19.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-14-1.jpg" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-14-1.jpg" data-width="90%" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1809,7 +1942,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-15-1.jpg" data-width1="90%" data-name1="Blue Diamond Almonds Lightly Salted Vegetables" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1837,7 +1970,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-15-1.jpg" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-15-1.jpg" data-width="90%" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1854,7 +1987,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-16-1.jpg" data-width1="90%" data-name1="Chobani Complete Vanilla Greek Yogurt" data-price1="54.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1879,7 +2012,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-16-1.jpg" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-16-1.jpg" data-width="90%" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1896,7 +2029,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-7-1.jpg" data-width1="90%" data-name1="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price1="32.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1921,7 +2054,7 @@
 													<span class="old-price">$33.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-7-1.jpg" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-7-1.jpg" data-width="90%" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1938,7 +2071,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-8-1.jpg" data-width1="90%" data-name1="Encore Seafoods Stuffed Alaskan Salmon" data-price1="35.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1966,7 +2099,7 @@
 													<span class="old-price">$37.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-8-1.jpg" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-8-1.jpg" data-width="90%" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1983,7 +2116,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-9-1.jpg" data-width1="90%" data-name1="Gorton’s Beer Battered Fish Fillets with soft paper" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2011,7 +2144,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-9-1.jpg" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-9-1.jpg" data-width="90%" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2028,7 +2161,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-10-1.jpg" data-width1="50%" data-name1="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price1="22.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2053,7 +2186,7 @@
 													<span class="old-price">$24.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-10-1.jpg" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-10-1.jpg" data-width="50%" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2076,7 +2209,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-9-1.jpg" data-width1="90%" data-name1="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price1="28.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2104,7 +2237,7 @@
 													<span class="old-price">$32.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-9-1.jpg" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-9-1.jpg" data-width="90%" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2121,7 +2254,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-8-1.jpg" data-width1="80%" data-name1="All Natural Italian-Style Chicken Meatballs" data-price1="52.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2149,7 +2282,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-8-1.jpg" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-8-1.jpg" data-width="80%" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2166,7 +2299,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-7-1.jpg" data-width1="85%" data-name1="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price1="48.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2194,7 +2327,7 @@
 													<span class="old-price">$52.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-7-1.jpg" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-7-1.jpg" data-width="85%" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2211,7 +2344,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-6-1.jpg" data-width1="90%" data-name1="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price1="17.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2236,7 +2369,7 @@
 													<span class="old-price">$19.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-6-1.jpg" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-6-1.jpg" data-width="90%" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2253,7 +2386,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-5-1.jpg" data-width1="90%" data-name1="Blue Diamond Almonds Lightly Salted Vegetables" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2281,7 +2414,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-5-1.jpg" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-5-1.jpg" data-width="90%" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2298,7 +2431,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-4-1.jpg" data-width1="90%" data-name1="Chobani Complete Vanilla Greek Yogurt" data-price1="54.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2323,7 +2456,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-4-1.jpg" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-4-1.jpg" data-width="90%" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2340,7 +2473,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-3-1.jpg" data-width1="90%" data-name1="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price1="32.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2365,7 +2498,7 @@
 													<span class="old-price">$33.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-3-1.jpg" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-3-1.jpg" data-width="90%" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2382,7 +2515,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-2-1.jpg" data-width1="90%" data-name1="Encore Seafoods Stuffed Alaskan Salmon" data-price1="35.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2410,7 +2543,7 @@
 													<span class="old-price">$37.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-2-1.jpg" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-2-1.jpg" data-width="90%" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2427,7 +2560,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-9-1.jpg" data-width1="90%" data-name1="Gorton’s Beer Battered Fish Fillets with soft paper" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2455,7 +2588,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-9-1.jpg" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-9-1.jpg" data-width="90%" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2472,7 +2605,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-1-1.jpg" data-width1="50%" data-name1="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price1="22.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2497,7 +2630,7 @@
 													<span class="old-price">$24.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-1-1.jpg" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-1-1.jpg" data-width="50%" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2520,7 +2653,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-6-1.jpg" data-width1="90%" data-name1="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price1="28.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2548,7 +2681,7 @@
 													<span class="old-price">$32.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-6-1.jpg" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-6-1.jpg" data-width="90%" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2565,7 +2698,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-7-1.jpg" data-width1="80%" data-name1="All Natural Italian-Style Chicken Meatballs" data-price1="52.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2593,7 +2726,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-7-1.jpg" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-7-1.jpg" data-width="80%" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2610,7 +2743,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-8-1.jpg" data-width1="85%" data-name1="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price1="48.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2638,7 +2771,7 @@
 													<span class="old-price">$52.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-8-1.jpg" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-8-1.jpg" data-width="85%" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2655,7 +2788,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-9-1.jpg" data-width1="90%" data-name1="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price1="17.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2680,7 +2813,7 @@
 													<span class="old-price">$19.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-9-1.jpg" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-9-1.jpg" data-width="90%" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2697,7 +2830,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-4-1.jpg" data-width1="90%" data-name1="Blue Diamond Almonds Lightly Salted Vegetables" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2725,7 +2858,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-4-1.jpg" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-4-1.jpg" data-width="90%" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2742,7 +2875,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-3-1.jpg" data-width1="90%" data-name1="Chobani Complete Vanilla Greek Yogurt" data-price1="54.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2767,7 +2900,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-3-1.jpg" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-3-1.jpg" data-width="90%" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2784,7 +2917,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-2-1.jpg" data-width1="90%" data-name1="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price1="32.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2809,7 +2942,7 @@
 													<span class="old-price">$33.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-2-1.jpg" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-2-1.jpg" data-width="90%" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2826,7 +2959,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-1-1.jpg" data-width1="90%" data-name1="Encore Seafoods Stuffed Alaskan Salmon" data-price1="35.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2854,7 +2987,7 @@
 													<span class="old-price">$37.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-1-1.jpg" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-1-1.jpg" data-width="90%" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2871,7 +3004,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-11-1.jpg" data-width1="90%" data-name1="Gorton’s Beer Battered Fish Fillets with soft paper" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2899,7 +3032,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-11-1.jpg" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-11-1.jpg" data-width="90%" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2916,7 +3049,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-12-1.jpg" data-width1="50%" data-name1="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price1="22.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2941,7 +3074,7 @@
 													<span class="old-price">$24.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-12-1.jpg" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-12-1.jpg" data-width="50%" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -2964,7 +3097,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-12-1.jpg" data-width1="90%" data-name1="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price1="28.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -2992,7 +3125,7 @@
 													<span class="old-price">$32.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-12-1.jpg" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-12-1.jpg" data-width="90%" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3009,7 +3142,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-13-1.jpg" data-width1="80%" data-name1="All Natural Italian-Style Chicken Meatballs" data-price1="52.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3037,7 +3170,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-13-1.jpg" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-13-1.jpg" data-width="80%" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3054,7 +3187,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-14-1.jpg" data-width1="85%" data-name1="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price1="48.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3082,7 +3215,7 @@
 													<span class="old-price">$52.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-14-1.jpg" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-14-1.jpg" data-width="85%" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3099,7 +3232,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-15-1.jpg" data-width1="90%" data-name1="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price1="17.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3124,7 +3257,7 @@
 													<span class="old-price">$19.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-15-1.jpg" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-15-1.jpg" data-width="90%" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3141,7 +3274,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-16-1.jpg" data-width1="90%" data-name1="Blue Diamond Almonds Lightly Salted Vegetables" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3169,7 +3302,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-16-1.jpg" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-16-1.jpg" data-width="90%" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3186,7 +3319,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-5-1.jpg" data-width1="90%" data-name1="Chobani Complete Vanilla Greek Yogurt" data-price1="54.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3211,7 +3344,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-5-1.jpg" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-5-1.jpg" data-width="90%" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3228,7 +3361,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-7-1.jpg" data-width1="90%" data-name1="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price1="32.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3253,7 +3386,7 @@
 													<span class="old-price">$33.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-7-1.jpg" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-7-1.jpg" data-width="90%" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3270,7 +3403,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-8-1.jpg" data-width1="90%" data-name1="Encore Seafoods Stuffed Alaskan Salmon" data-price1="35.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3298,7 +3431,7 @@
 													<span class="old-price">$37.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-8-1.jpg" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-8-1.jpg" data-width="90%" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3315,7 +3448,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-9-1.jpg" data-width1="90%" data-name1="Gorton’s Beer Battered Fish Fillets with soft paper" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3343,7 +3476,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-9-1.jpg" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-9-1.jpg" data-width="90%" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3360,7 +3493,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-10-1.jpg" data-width1="50%" data-name1="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price1="22.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3385,7 +3518,7 @@
 													<span class="old-price">$24.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-10-1.jpg" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-10-1.jpg" data-width="50%" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3408,7 +3541,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-4-1.jpg" data-width1="90%" data-name1="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price1="28.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3436,7 +3569,7 @@
 													<span class="old-price">$32.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-4-1.jpg" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-4-1.jpg" data-width="90%" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3453,7 +3586,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-6-1.jpg" data-width1="80%" data-name1="All Natural Italian-Style Chicken Meatballs" data-price1="52.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3481,7 +3614,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-6-1.jpg" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-6-1.jpg" data-width="80%" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3498,7 +3631,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-8-1.jpg" data-width1="85%" data-name1="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price1="48.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3526,7 +3659,7 @@
 													<span class="old-price">$52.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-8-1.jpg" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-8-1.jpg" data-width="85%" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3543,7 +3676,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-9-1.jpg" data-width1="90%" data-name1="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price1="17.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3568,7 +3701,7 @@
 													<span class="old-price">$19.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-9-1.jpg" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-9-1.jpg" data-width="90%" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3585,7 +3718,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-5-1.jpg" data-width1="90%" data-name1="Blue Diamond Almonds Lightly Salted Vegetables" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3613,7 +3746,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-5-1.jpg" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-5-1.jpg" data-width="90%" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3630,7 +3763,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-6-1.jpg" data-width1="90%" data-name1="Chobani Complete Vanilla Greek Yogurt" data-price1="54.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3655,7 +3788,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-6-1.jpg" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-6-1.jpg" data-width="90%" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3672,7 +3805,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-7-1.jpg" data-width1="90%" data-name1="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price1="32.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3697,7 +3830,7 @@
 													<span class="old-price">$33.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-7-1.jpg" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-7-1.jpg" data-width="90%" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3714,7 +3847,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-8-1.jpg" data-width1="90%" data-name1="Encore Seafoods Stuffed Alaskan Salmon" data-price1="35.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3742,7 +3875,7 @@
 													<span class="old-price">$37.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-8-1.jpg" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-8-1.jpg" data-width="90%" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3759,7 +3892,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-9-1.jpg" data-width1="90%" data-name1="Gorton’s Beer Battered Fish Fillets with soft paper" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3787,7 +3920,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-9-1.jpg" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-9-1.jpg" data-width="90%" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3804,7 +3937,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-10-1.jpg" data-width1="50%" data-name1="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price1="22.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3829,7 +3962,7 @@
 													<span class="old-price">$24.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-10-1.jpg" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-10-1.jpg" data-width="50%" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3852,7 +3985,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-5-1.jpg" data-width1="90%" data-name1="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price1="28.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3880,7 +4013,7 @@
 													<span class="old-price">$32.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-5-1.jpg" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-5-1.jpg" data-width="90%" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3897,7 +4030,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlists" data-image1="assets/imgs/shop/product-3-1.jpg" data-width1="80%" data-name1="All Natural Italian-Style Chicken Meatballs" data-price1="52.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3925,7 +4058,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-3-1.jpg" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-3-1.jpg" data-width="80%" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3942,7 +4075,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-7-1.jpg" data-width1="85%" data-name1="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price1="48.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -3970,7 +4103,7 @@
 													<span class="old-price">$52.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-7-1.jpg" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-7-1.jpg" data-width="85%" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -3987,7 +4120,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-9-1.jpg" data-width1="90%" data-name1="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price1="17.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -4012,7 +4145,7 @@
 													<span class="old-price">$19.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-9-1.jpg" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-9-1.jpg" data-width="90%" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -4029,7 +4162,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-10-1.jpg" data-width1="90%" data-name1="Blue Diamond Almonds Lightly Salted Vegetables" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -4057,7 +4190,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-10-1.jpg" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-10-1.jpg" data-width="90%" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -4074,7 +4207,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-16-1.jpg" data-width1="90%" data-name1="Chobani Complete Vanilla Greek Yogurt" data-price1="54.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -4099,7 +4232,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-16-1.jpg" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-16-1.jpg" data-width="90%" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -4116,7 +4249,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-7-1.jpg" data-width1="90%" data-name1="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price1="32.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -4141,7 +4274,7 @@
 													<span class="old-price">$33.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-7-1.jpg" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-7-1.jpg" data-width="90%" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -4158,7 +4291,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-8-1.jpg" data-width1="90%" data-name1="Encore Seafoods Stuffed Alaskan Salmon" data-price1="35.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -4186,7 +4319,7 @@
 													<span class="old-price">$37.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-8-1.jpg" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-8-1.jpg" data-width="90%" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -4203,7 +4336,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-9-1.jpg" data-width1="90%" data-name1="Gorton’s Beer Battered Fish Fillets with soft paper" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -4231,7 +4364,7 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-9-1.jpg" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-9-1.jpg" data-width="90%" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -4248,7 +4381,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-10-1.jpg" data-width1="50%" data-name1="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price1="22.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -4273,7 +4406,7 @@
 													<span class="old-price">$24.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add" data-image="assets/imgs/shop/product-10-1.jpg" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-10-1.jpg" data-width="50%" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -4330,7 +4463,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-1-1.jpg" data-width1="80%" data-name1="Seeds of Change Organic Quinoa, Brown" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4355,7 +4488,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-1-1.jpg" data-width="80%" data-name="Seeds of Change Organic Quinoa, Brown" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4369,7 +4502,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-5-1.jpg" data-width1="80%" data-name1="All Natural Italian-Style Chicken Meatballs" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4394,7 +4527,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-5-1.jpg" data-width="80%" data-name="All Natural Italian-Style Chicken Meatballs" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4408,7 +4541,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-2-1.jpg" data-width1="80%" data-name1="Angie’s Boomchickapop Sweet and womnies" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4433,7 +4566,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-2-1.jpg" data-width="80%" data-name="Angie’s Boomchickapop Sweet and womnies" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4447,7 +4580,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-3-1.jpg" data-width1="80%" data-name1="Foster Farms Takeout Crispy Classic" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4472,7 +4605,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-3-1.jpg" data-width="80%" data-name="Foster Farms Takeout Crispy Classic" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4486,7 +4619,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-4-1.jpg" data-width1="80%" data-name1="Blue Diamond Almonds Lightly Salted" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4511,7 +4644,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-4-1.jpg" data-width="80%" data-name="Blue Diamond Almonds Lightly Salted" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4533,7 +4666,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-10-1.jpg" data-width1="80%" data-name1="Canada Dry Ginger Ale – 2 L Bottle" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4558,7 +4691,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-10-1.jpg" data-width="80%" data-name="Canada Dry Ginger Ale – 2 L Bottle" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4572,7 +4705,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-15-1.jpg" data-width1="80%" data-name1="Encore Seafoods Stuffed Alaskan" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4597,7 +4730,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-15-1.jpg" data-width="80%" data-name="Encore Seafoods Stuffed Alaskan" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4611,7 +4744,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-12-1.jpg" data-width1="80%" data-name1="Gorton’s Beer Battered Fish" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4636,7 +4769,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-12-1.jpg" data-width="80%" data-name="Gorton’s Beer Battered Fish" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4650,7 +4783,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-13-1.jpg" data-width1="80%" data-name1="Haagen-Dazs Caramel Cone Ice" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4675,7 +4808,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-13-1.jpg" data-width="80%" data-name="Haagen-Dazs Caramel Cone Ice" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4689,7 +4822,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-14-1.jpg" data-width1="80%" data-name1="Italian-Style Chicken Meatball" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4714,7 +4847,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-14-1.jpg" data-width="80%" data-name="Italian-Style Chicken Meatball" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4735,7 +4868,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-7-1.jpg" data-width1="80%" data-name1="Perdue Simply Smart Organics Gluten Free" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4760,7 +4893,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-7-1.jpg" data-width="80%" data-name="Perdue Simply Smart Organics Gluten Free" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4774,7 +4907,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-8-1.jpg" data-width1="80%" data-name1="Seeds of Change Organic Quinoa, Brown" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4799,7 +4932,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-8-1.jpg" data-width="80%" data-name="Seeds of Change Organic Quinoa, Brown" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4813,7 +4946,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-9-1.jpg" data-width1="80%" data-name1="Signature Wood-Fired Mushroom" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4838,7 +4971,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-9-1.jpg" data-width="80%" data-name="Signature Wood-Fired Mushroom" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4852,7 +4985,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-13-1.jpg" data-width1="80%" data-name1="Simply Lemonade with Raspberry Juice" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4877,7 +5010,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-13-1.jpg" data-width="80%" data-name="Simply Lemonade with Raspberry Juice" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -4891,7 +5024,7 @@
 													</div>
 													<div class="product-action-1">
 														<a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"> <i class="fi-rs-eye"></i></a>
-														<a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+														<a aria-label="Add To Wishlist" class="action-btn small hover-up add_wishlist" data-image1="assets/imgs/shop/product-14-1.jpg" data-width1="80%" data-name1="Organic Quinoa, Brown, & Red Rice" data-price1="238.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 														<a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 													</div>
 													<div class="product-badges product-badges-position product-badges-mrg">
@@ -4916,7 +5049,7 @@
 														</div>
 														<span class="font-xs text-heading"> Sold: 90/120</span>
 													</div>
-													<a href="shop-cart.html" class="btn w-100 hover-up"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
+													<a href="shop-cart.html" class="btn w-100 hover-up add_cart" data-image="assets/imgs/shop/product-14-1.jpg" data-width="80%" data-name="Organic Quinoa, Brown, & Red Rice" data-price="238.85"><i class="fi-rs-shopping-cart mr-5"></i>Add To Cart</a>
 												</div>
 											</div>
 											<!--End product Wrap-->
@@ -5514,13 +5647,13 @@
 						<div class="footer-link-widget col  wow animate__animated animate__fadeInUp"  data-wow-delay=".4s">
 							<h4 class="widget-title ">Popular</h4>
 							<ul class="footer-list  mb-sm-5 mb-md-0">
-								<li><a href="#">Milk & Flavoured Milk</a></li>
-								<li><a href="#">Butter and Margarine</a></li>
-								<li><a href="#">Eggs Substitutes</a></li>
-								<li><a href="#">Marmalades</a></li>
-								<li><a href="#">Sour Cream and Dips</a></li>
-								<li><a href="#">Tea & Kombucha</a></li>
-								<li><a href="#">Cheese</a></li>
+								<li><a href="shop-grid-right.html">Devices</a></li>
+								<li><a href="Nutrition.html">Nutrition & Fitness Supplements</a></li>
+								<li><a href="personalCare.html">Personal Care</a></li>
+								<li><a href="AyurvedicCare.html">Ayurvedic Care</a></li>
+								<li><a href="babyMomCare.html">Baby & Mom Care</a></li>
+								<li><a href="skinCare.html">Skin Care</a></li>
+								<li><a href="diabeticCare.html">Diabetic Care</a></li>
 							</ul>
 						</div>
 						<div class="footer-link-widget widget-install-app col  wow animate__animated animate__fadeInUp"  data-wow-delay=".5s">
@@ -5612,6 +5745,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 		<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
 	    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+		<script src="assets/js/wishList.js"></script>
 		<script src="assets/js/cart.js"></script>
 	</body>
 </html>
