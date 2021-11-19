@@ -136,6 +136,12 @@ $('.add_wishlist').click(function(event) {
     displayWishlist();
   });
 
+  // Displaying Wishlist
+  icon_wishList_darkEl = document.getElementById("icon_wishList_dark");
+  icon_wishList_whiteEl = document.getElementById("icon_wishList_white");
+  icon_cart_darkEl = document.getElementById("icon_cart_dark");
+  icon_cart_lightEl = document.getElementById("icon_cart_light");
+
   function displayWishlist() {
     $('.wish_list').html(shoppingWishList.totalCount());
     if (shoppingWishList.totalCount() > 0){

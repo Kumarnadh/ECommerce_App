@@ -149,8 +149,9 @@
 									</div>
 									<div class="header-action-icon-2">
 										<a class="mini-cart-icon" href="shop-cart.html">
-											<img alt="Cart" src="assets/imgs/theme/icons/icon-cart.svg" />
-											<span id="model_count" class="pro-count blue home">0</span>
+											<img id="icon_cart_light" alt="cart" src="assets/imgs/theme/icons/icon-cart.svg" />
+											<img id="icon_cart_dark" class="d-none" alt="cart" src="assets/imgs/theme/icons/icon-cart-dark.png" />
+											<span id="model_count" class="pro-count blue home_wishlist">0</span>
 										</a>
 										<a href="shop-cart.html"><span class="lable">Cart</span></a>
 										<div id="counter_disp_cart" class="cart-dropdown-wrap cart-dropdown-hm2">
@@ -1031,7 +1032,8 @@
 		<script>
 	    icon_wishList_darkEl = document.getElementById("icon_wishList_dark");
 		icon_wishList_whiteEl = document.getElementById("icon_wishList_white");
-
+		icon_cart_darkEl = document.getElementById("icon_cart_dark");
+		icon_cart_lightEl = document.getElementById("icon_cart_light");
 		let cartWishlist = localStorage.getItem("shoppingWishlist");
 		displayWishlist(cartWishlist);
 		function displayWishlist() {
@@ -1078,6 +1080,15 @@
 				icon_wishList_darkEl.classList.remove("d-none");
 				icon_wishList_whiteEl.classList.add("d-none");
 			}
+			// if (shoppingCart.totalCount() > 0){
+			// 	icon_cart_darkEl.classList.remove("d-none");
+			// 	icon_cart_lightEl.classList.add("d-none");
+			// }
+
+			// if (shoppingCart.totalCount() === 0){
+			// 	icon_cart_darkEl.classList.add("d-none");
+			// 	icon_cart_lightEl.classList.remove("d-none");
+			// }
 		}
 
 		// Delete button
@@ -1088,6 +1099,50 @@
 		})
 
 		displayWishlist();
+
+	// Old Details of cart
+	function displayCart() {
+    var cartArray = shoppingCart.listCart();
+    var output = "";
+    for(var i in cartArray) {
+      output += "<br><div class='d-flex justify-content-between'>"
+        + `<p><a href="shop-product-right.html"><img class='img_width' alt="E-Commerce" src="${cartArray[i].imgSrc}" /></a></p><br>`
+        + `<p class="shopping-cart-title w-50"><a href="shop-product-right.html">${cartArray[i].name}
+        </a>
+        </p>`
+        + "<div class='shopping-cart-delete d-flex justify-content-end'>"
+        + "<a href='#'><button class='delete-item button_cart' data-name=" + JSON.stringify(cartArray[i].name) + "><i class='fi-rs-cross-small'></i></a></button>"
+        + "</div>"
+        + "</div>"
+        + "<div>"
+        + `<p class='d-flex justify-content-center text-justify'>
+        <span class='text-black'> ${cartArray[i].count} &nbsp; × &nbsp;</span>
+        <span class='text-black'>$</span><span class='text-black'>${cartArray[i].price}</span>
+        </p>`
+        + "</div><br>";
+    }
+    $('.model_card_none').html(output);
+    $('.home_wishlist').html(shoppingCart.totalCount());
+    $('.cart_dd_total').html(shoppingCart.totalCart());
+
+	if(shoppingCart.totalCount() == 0){
+      counter_disp_cartEl.classList.add("d-none");
+    } else if(shoppingCart.totalCount() > 0){
+      counter_disp_cartEl.classList.remove("d-none");
+    }
+
+    if (shoppingCart.totalCount() > 0){
+      icon_cart_darkEl.classList.remove("d-none");
+      icon_cart_lightEl.classList.add("d-none");
+    }
+
+    if (shoppingCart.totalCount() === 0){
+      icon_cart_darkEl.classList.add("d-none");
+      icon_cart_lightEl.classList.remove("d-none");
+    }
+  }
+
+  displayCart();
     </script>
     </body>
 </html>
