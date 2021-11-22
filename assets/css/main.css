@@ -7803,6 +7803,19 @@ span.fi-rs-apps {
   align-self: center;
 }
 
+
+.row .tabs_grid_show {
+  opacity: 0;
+  display: none;
+}
+
+.row .tabs_grid_show.active {
+  opacity: 1;
+  display: block;
+  -webkit-animation: fadeIn 0.65s ease forwards;
+  animation: fadeIn 0.65s ease forwards;
+}
+
 /*
  *  STYLE 3
  */

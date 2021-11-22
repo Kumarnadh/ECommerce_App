@@ -1279,38 +1279,22 @@
 			</section>
 			<!--End banners-->
 			<section class="product-tabs section-padding position-relative">
-				<div class="container">
+				<div class="container filtering">
 					<div class="section-title style-2 wow animate__animated animate__fadeIn">
 						<h3>Popular Products</h3>
-						<ul class="nav nav-tabs links" id="myTab" role="tablist">
-							<li class="nav-item" role="presentation">
-								<button class="nav-link active" id="nav-tab-one" data-bs-toggle="tab" data-bs-target="#tab-one" type="button" role="tab" aria-controls="tab-one" aria-selected="true">All</button>
-							</li>
-							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="nav-tab-two" data-bs-toggle="tab" data-bs-target="#tab-two" type="button" role="tab" aria-controls="tab-two" aria-selected="false">Devices</button>
-							</li>
-							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="nav-tab-three" data-bs-toggle="tab" data-bs-target="#tab-three" type="button" role="tab" aria-controls="tab-three" aria-selected="false">Nutrition & Fitness Supplements</button>
-							</li>
-							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="nav-tab-four" data-bs-toggle="tab" data-bs-target="#tab-four" type="button" role="tab" aria-controls="tab-four" aria-selected="false">Personal Care</button>
-							</li>
-							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="nav-tab-five" data-bs-toggle="tab" data-bs-target="#tab-five" type="button" role="tab" aria-controls="tab-five" aria-selected="false">Ayurvedic Care</button>
-							</li>
-							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="nav-tab-six" data-bs-toggle="tab" data-bs-target="#tab-six" type="button" role="tab" aria-controls="tab-six" aria-selected="false">Baby & Mom Care</button>
-							</li>
-							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="nav-tab-seven" data-bs-toggle="tab" data-bs-target="#tab-seven" type="button" role="tab" aria-controls="tab-seven" aria-selected="false">Skin Care</button>
-							</li>
+						<ul class="nav nav-tabs links nav-filter-cat">
+							<li><button class="nav-link active cat-all">All</button></li>
+							<li><button class="nav-link cat-devices" data-cat="cat-devices">Devices</button></li>
+							<li><button class="nav-link cat-nutrition" data-cat="cat-nutrition">Nutrition & Fitness Supplements</button></li>
+							<li><button class="nav-link cat-personal" data-cat="cat-personal">Personal Care</button></li>
+							<li><button class="nav-link cat-ayurvedic" data-cat="cat-ayurvedic">Ayurvedic Care</button></li>
+							<li><button class="nav-link cat-baby" data-cat="cat-baby">Baby & Mom Care</button></li>
+							<li><button class="nav-link cat-skin" data-cat="cat-skin">Skin Care</button></li>
 						</ul>
 					</div>
 					<!--End nav-tabs-->
-					<div class="tab-content" id="myTabContent">
-						<div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one">
-							<div class="row product-grid-4">
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+							<div class="row product-grid-4 filter-cat-results">
+								<div class="col-lg-1-5 col-md-4 col-12 tabs_grid_show col-sm-6 f-cat cat-devices" data-cat="cat-devices">
 									<div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".1s">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1320,7 +1304,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-1-1.jpg" data-width1="90%" data-name1="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price1="28.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-1-1.jpg" data-width1="90%" data-name1="Devices Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price1="28.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1332,7 +1316,7 @@
 											<div class="product-category">
 												<a href="shop-grid-right.html">Snack</a>
 											</div>
-											<h2><a href="shop-product-right.html"><span class="cart-content">Seeds of Change Organic Quinoa, Brown, & Red Rice</span></a></h2>
+											<h2><a href="shop-product-right.html"><span class="cart-content">Devices Seeds of Change Organic Quinoa, Brown, & Red Rice</span></a></h2>
 											<div class="product-rate-cover">
 												<div class="product-rate d-inline-block">
 													<div id="stars" class="product-rating" style="width: 90%"></div>
@@ -1348,14 +1332,14 @@
 													<span class="old-price">$32.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add add_cart" data-image="assets/imgs/shop/product-1-1.jpg" data-width="90%" data-name="Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-1-1.jpg" data-width="90%" data-name="Devices Seeds of Change Organic Quinoa, Brown, & Red Rice" data-price="28.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<div class="col-lg-1-5 col-md-4 col-12 tabs_grid_show col-sm-6 f-cat cat-nutrition" data-cat="cat-nutrition">
 									<div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".2s">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1365,7 +1349,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-2-1.jpg" data-width1="80%" data-name1="All Natural Italian-Style Chicken Meatballs" data-price1="52.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-2-1.jpg" data-width1="80%" data-name1="Nutrition & Fitness Supplements All Natural Italian-Style Chicken Meatballs" data-price1="52.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1377,7 +1361,7 @@
 											<div class="product-category">
 												<a href="shop-grid-right.html">Hodo Foods</a>
 											</div>
-											<h2><a href="shop-product-right.html"><span class="cart-content">All Natural Italian-Style Chicken Meatballs</span></a></h2>
+											<h2><a href="shop-product-right.html"><span class="cart-content">Nutrition & Fitness Supplements All Natural Italian-Style Chicken Meatballs</span></a></h2>
 											<div class="product-rate-cover">
 												<div class="product-rate d-inline-block">
 													<div class="product-rating" style="width: 80%"></div>
@@ -1393,7 +1377,7 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add add_cart" data-image="assets/imgs/shop/product-2-1.jpg" data-width="80%" data-name="All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-2-1.jpg" data-width="80%" data-name="Nutrition & Fitness Supplements All Natural Italian-Style Chicken Meatballs" data-price="52.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 												<!-- href="shop-cart.html" -->
 											</div>
@@ -1401,7 +1385,7 @@
 									</div>
 								</div>
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<div class="col-lg-1-5 col-md-4 col-12 tabs_grid_show col-sm-6 f-cat cat-personal" data-cat="cat-personal">
 									<div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".3s">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1411,7 +1395,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-3-1.jpg" data-width1="85%" data-name1="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price1="48.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-3-1.jpg" data-width1="85%" data-name1="Personal Care Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price1="48.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1423,7 +1407,7 @@
 											<div class="product-category">
 												<a href="shop-grid-right.html">Snack</a>
 											</div>
-											<h2><a href="shop-product-right.html"><span class ="cart-content">Angie’s Boomchickapop Sweet & Salty Kettle Corn</span></a></h2>
+											<h2><a href="shop-product-right.html"><span class ="cart-content">Personal Care Angie’s Boomchickapop Sweet & Salty Kettle Corn</span></a></h2>
 											<div class="product-rate-cover">
 												<div class="product-rate d-inline-block">
 													<div class="product-rating" style="width: 85%"></div>
@@ -1439,14 +1423,14 @@
 													<span class="old-price">$52.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add add_cart" data-image="assets/imgs/shop/product-3-1.jpg" data-width="85%" data-name="Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-3-1.jpg" data-width="85%" data-name="Personal Care Angie’s Boomchickapop Sweet & Salty Kettle Corn" data-price="48.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<div class="col-lg-1-5 col-md-4 col-12 tabs_grid_show col-sm-6 f-cat cat-ayurvedic" data-cat="cat-ayurvedic">
 									<div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".4s">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1456,7 +1440,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-4-1.jpg" data-width1="90%" data-name1="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price1="17.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-4-1.jpg" data-width1="90%" data-name1="Ayurvedic Care Foster Farms Takeout Crispy Classic Buffalo Wings" data-price1="17.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1465,7 +1449,7 @@
 											<div class="product-category">
 												<a href="shop-grid-right.html">Vegetables</a>
 											</div>
-											<h2><a href="shop-product-right.html"><span class="cart-content">Foster Farms Takeout Crispy Classic Buffalo Wings</span></a></h2>
+											<h2><a href="shop-product-right.html"><span class="cart-content">Ayurvedic Care Foster Farms Takeout Crispy Classic Buffalo Wings</span></a></h2>
 											<div class="product-rate-cover">
 												<div class="product-rate d-inline-block">
 													<div class="product-rating" style="width: 90%"></div>
@@ -1481,14 +1465,14 @@
 													<span class="old-price">$19.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add add_cart" data-image="assets/imgs/shop/product-4-1.jpg" data-width="90%" data-name="Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-4-1.jpg" data-width="90%" data-name="Ayurvedic Care Foster Farms Takeout Crispy Classic Buffalo Wings" data-price="17.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<div class="col-lg-1-5 col-md-4 col-12 tabs_grid_show col-sm-6 f-cat cat-devices" data-cat="cat-devices">
 									<div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1498,7 +1482,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-5-1.jpg" data-width1="90%" data-name1="Blue Diamond Almonds Lightly Salted Vegetables" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-5-1.jpg" data-width1="90%" data-name1="Devices Blue Diamond Almonds Lightly Salted Vegetables" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1510,7 +1494,7 @@
 											<div class="product-category">
 												<a href="shop-grid-right.html">Pet Foods</a>
 											</div>
-											<h2><a href="shop-product-right.html"><span class="cart-content">Blue Diamond Almonds Lightly Salted Vegetables</span></a></h2>
+											<h2><a href="shop-product-right.html"><span class="cart-content">Devices Blue Diamond Almonds Lightly Salted Vegetables</span></a></h2>
 											<div class="product-rate-cover">
 												<div class="product-rate d-inline-block">
 													<div class="product-rating" style="width: 90%"></div>
@@ -1526,14 +1510,14 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add add_cart" data-image="assets/imgs/shop/product-5-1.jpg" data-width="90%" data-name="Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-5-1.jpg" data-width="90%" data-name="Devices Blue Diamond Almonds Lightly Salted Vegetables" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<div class="col-lg-1-5 col-md-4 tabs_grid_show col-12 col-sm-6 f-cat cat-baby" data-cat="cat-baby">
 									<div class="product-cart-wrap wow animate__animated animate__fadeIn" data-wow-delay=".1s">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1543,7 +1527,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-6-1.jpg" data-width1="90%" data-name1="Chobani Complete Vanilla Greek Yogurt" data-price1="54.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-6-1.jpg" data-width1="90%" data-name1="Baby & Mom Care Chobani Complete Vanilla Greek Yogurt" data-price1="54.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1552,7 +1536,7 @@
 											<div class="product-category">
 												<a href="shop-grid-right.html">Hodo Foods</a>
 											</div>
-											<h2><a href="shop-product-right.html"><span class="cart-content">Chobani Complete Vanilla Greek Yogurt</span></a></h2>
+											<h2><a href="shop-product-right.html"><span class="cart-content">Baby & Mom Care Chobani Complete Vanilla Greek Yogurt</span></a></h2>
 											<div class="product-rate-cover">
 												<div class="product-rate d-inline-block">
 													<div class="product-rating" style="width: 90%"></div>
@@ -1568,14 +1552,14 @@
 													<span class="old-price">$55.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add add_cart" data-image="assets/imgs/shop/product-6-1.jpg" data-width="90%" data-name="Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-6-1.jpg" data-width="90%" data-name="Baby & Mom Care Chobani Complete Vanilla Greek Yogurt" data-price="54.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<div class="col-lg-1-5 col-md-4 tabs_grid_show col-12 col-sm-6 f-cat cat-skin" data-cat="cat-skin">
 									<div class="product-cart-wrap wow animate__animated animate__fadeIn" data-wow-delay=".2s">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1585,7 +1569,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-7-1.jpg" data-width1="90%" data-name1="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price1="32.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-7-1.jpg" data-width1="90%" data-name1="Skin Care Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price1="32.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1594,7 +1578,7 @@
 											<div class="product-category">
 												<a href="shop-grid-right.html">Meats</a>
 											</div>
-											<h2><a href="shop-product-right.html"><span class="cart-content">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</span></a></h2>
+											<h2><a href="shop-product-right.html"><span class="cart-content">Skin Care Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</span></a></h2>
 											<div class="product-rate-cover">
 												<div class="product-rate d-inline-block">
 													<div class="product-rating" style="width: 90%"></div>
@@ -1610,14 +1594,14 @@
 													<span class="old-price">$33.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add add_cart" data-image="assets/imgs/shop/product-7-1.jpg" data-width="90%" data-name="Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-7-1.jpg" data-width="90%" data-name="Skin Care Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g" data-price="32.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<div class="col-lg-1-5 col-md-4 tabs_grid_show col-12 col-sm-6 f-cat cat-skin" data-cat="cat-skin">
 									<div class="product-cart-wrap wow animate__animated animate__fadeIn" data-wow-delay=".3s">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1627,7 +1611,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-8-1.jpg" data-width1="90%" data-name1="Encore Seafoods Stuffed Alaskan Salmon" data-price1="35.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-8-1.jpg" data-width1="90%" data-name1="Skin Care Encore Seafoods Stuffed Alaskan Salmon" data-price1="35.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1639,7 +1623,7 @@
 											<div class="product-category">
 												<a href="shop-grid-right.html">Snack</a>
 											</div>
-											<h2><a href="shop-product-right.html"><span class="cart-content">Encore Seafoods Stuffed Alaskan Salmon</span></a></h2>
+											<h2><a href="shop-product-right.html"><span class="cart-content">Skin Care Encore Seafoods Stuffed Alaskan Salmon</span></a></h2>
 											<div class="product-rate-cover">
 												<div class="product-rate d-inline-block">
 													<div class="product-rating" style="width: 90%"></div>
@@ -1655,14 +1639,14 @@
 													<span class="old-price">$37.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add add_cart" data-image="assets/imgs/shop/product-8-1.jpg" data-width="90%" data-name="Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-8-1.jpg" data-width="90%" data-name="Skin Care Encore Seafoods Stuffed Alaskan Salmon" data-price="35.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<div class="col-lg-1-5 col-md-4 col-12 tabs_grid_show col-sm-6 f-cat cat-personal" data-cat="cat-personal">
 									<div class="product-cart-wrap wow animate__animated animate__fadeIn" data-wow-delay=".4s">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1672,7 +1656,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-9-1.jpg" data-width1="90%" data-name1="Gorton’s Beer Battered Fish Fillets with soft paper" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-9-1.jpg" data-width1="90%" data-name1="Personal Care Gorton’s Beer Battered Fish Fillets with soft paper" data-price1="23.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1684,7 +1668,7 @@
 											<div class="product-category">
 												<a href="shop-grid-right.html">Coffes</a>
 											</div>
-											<h2><a href="shop-product-right.html"><span class="cart-content">Gorton’s Beer Battered Fish Fillets with soft paper</span></a></h2>
+											<h2><a href="shop-product-right.html"><span class="cart-content">Personal Care Gorton’s Beer Battered Fish Fillets with soft paper</span></a></h2>
 											<div class="product-rate-cover">
 												<div class="product-rate d-inline-block">
 													<div class="product-rating" style="width: 90%"></div>
@@ -1700,14 +1684,14 @@
 													<span class="old-price">$25.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add add_cart" data-image="assets/imgs/shop/product-9-1.jpg" data-width="90%" data-name="Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-9-1.jpg" data-width="90%" data-name="Personal Care Gorton’s Beer Battered Fish Fillets with soft paper" data-price="23.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-none d-xl-block">
+								<div class="col-lg-1-5 col-md-4 tabs_grid_show col-12 col-sm-6 d-none d-xl-block f-cat cat-nutrition" data-cat="cat-nutrition">
 									<div class="product-cart-wrap wow animate__animated animate__fadeIn" data-wow-delay=".5s">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1717,7 +1701,7 @@
 												</a>
 											</div>
 											<div class="product-action-1">
-												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-10-1.jpg" data-width1="50%" data-name1="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price1="22.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+												<a aria-label="Add To Wishlist" class="action-btn add_wishlist" data-image1="assets/imgs/shop/product-10-1.jpg" data-width1="50%" data-name1="Nutrition Care Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price1="22.85" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
 												<a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
 												<a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
 											</div>
@@ -1726,7 +1710,7 @@
 											<div class="product-category">
 												<a href="shop-grid-right.html">Cream</a>
 											</div>
-											<h2><a href="shop-product-right.html"><span class="cart-content">Haagen-Dazs Caramel Cone Ice Cream Ketchup</span></a></h2>
+											<h2><a href="shop-product-right.html"><span class="cart-content">Nutrition Care Haagen-Dazs Caramel Cone Ice Cream Ketchup</span></a></h2>
 											<div class="product-rate-cover">
 												<div class="product-rate d-inline-block">
 													<div class="product-rating" style="width: 50%"></div>
@@ -1742,7 +1726,7 @@
 													<span class="old-price">$24.8</span>
 												</div>
 												<div class="add-cart">
-													<a class="add add_cart" data-image="assets/imgs/shop/product-10-1.jpg" data-width="50%" data-name="Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+													<a class="add add_cart" data-image="assets/imgs/shop/product-10-1.jpg" data-width="50%" data-name="Nutrition Care Haagen-Dazs Caramel Cone Ice Cream Ketchup" data-price="22.85"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
 												</div>
 											</div>
 										</div>
@@ -1751,9 +1735,9 @@
 								<!--end product card-->
 							</div>
 							<!--End product-grid-4-->
-						</div>
+						<!-- </div> -->
 						<!--En tab one-->
-						<div class="tab-pane fade" id="tab-two" role="tabpanel" aria-labelledby="tab-two">
+						<!-- <div class="tab-pane fade" id="tab-two" role="tabpanel" aria-labelledby="tab-two">
 							<div class="row product-grid-4">
 								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
@@ -1798,9 +1782,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1843,9 +1827,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1888,9 +1872,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1930,9 +1914,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -1975,9 +1959,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2017,9 +2001,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2059,9 +2043,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2104,9 +2088,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2149,9 +2133,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-none d-xl-block">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-none d-xl-block">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2191,13 +2175,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-							</div>
+							<!-- </div> -->
 							<!--End product-grid-4-->
-						</div>
+						<!-- </div> -->
 						<!--En tab two-->
-						<div class="tab-pane fade" id="tab-three" role="tabpanel" aria-labelledby="tab-three">
+						<!-- <div class="tab-pane fade" id="tab-three" role="tabpanel" aria-labelledby="tab-three">
 							<div class="row product-grid-4">
 								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
@@ -2243,9 +2227,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2289,9 +2273,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2335,9 +2319,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2378,9 +2362,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2424,9 +2408,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2467,9 +2451,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2510,9 +2494,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2556,9 +2540,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2602,9 +2586,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-none d-xl-block">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-none d-xl-block">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2645,13 +2629,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-							</div>
+							<!-- </div> -->
 							<!--End product-grid-4-->
-						</div>
+						<!-- </div> -->
 						<!--En tab three-->
-						<div class="tab-pane fade" id="tab-four" role="tabpanel" aria-labelledby="tab-four">
+						<!-- <div class="tab-pane fade" id="tab-four" role="tabpanel" aria-labelledby="tab-four">
 							<div class="row product-grid-4">
 								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
@@ -2697,9 +2681,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2743,9 +2727,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2789,9 +2773,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2832,9 +2816,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2878,9 +2862,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2921,9 +2905,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -2964,9 +2948,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3010,9 +2994,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3056,9 +3040,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-none d-xl-block">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-none d-xl-block">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3099,13 +3083,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-							</div>
+							<!-- </div> -->
 							<!--End product-grid-4-->
-						</div>
+						<!-- </div> -->
 						<!--En tab four-->
-						<div class="tab-pane fade" id="tab-five" role="tabpanel" aria-labelledby="tab-five">
+						<!-- <div class="tab-pane fade" id="tab-five" role="tabpanel" aria-labelledby="tab-five">
 							<div class="row product-grid-4">
 								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
@@ -3150,9 +3134,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3195,9 +3179,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3240,9 +3224,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3282,9 +3266,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3327,9 +3311,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3369,9 +3353,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3411,9 +3395,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3456,9 +3440,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3501,9 +3485,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-none d-xl-block">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-none d-xl-block">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3543,13 +3527,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-							</div>
+							<!-- </div> -->
 							<!--End product-grid-4-->
-						</div>
+						<!-- </div> -->
 						<!--En tab five-->
-						<div class="tab-pane fade" id="tab-six" role="tabpanel" aria-labelledby="tab-six">
+						<!-- <div class="tab-pane fade" id="tab-six" role="tabpanel" aria-labelledby="tab-six">
 							<div class="row product-grid-4">
 								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
@@ -3594,9 +3578,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3639,9 +3623,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3684,9 +3668,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3726,9 +3710,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3771,9 +3755,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3813,9 +3797,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3855,9 +3839,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3900,9 +3884,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3945,9 +3929,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-none d-xl-block">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-none d-xl-block">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -3987,13 +3971,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-							</div>
+							<!-- </div> -->
 							<!--End product-grid-4-->
-						</div>
+						<!-- </div> -->
 						<!--En tab six-->
-						<div class="tab-pane fade" id="tab-seven" role="tabpanel" aria-labelledby="tab-seven">
+						<!-- <div class="tab-pane fade" id="tab-seven" role="tabpanel" aria-labelledby="tab-seven">
 							<div class="row product-grid-4">
 								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
@@ -4038,9 +4022,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -4083,9 +4067,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -4128,9 +4112,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -4170,9 +4154,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap mb-30">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -4215,9 +4199,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -4257,9 +4241,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -4299,9 +4283,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -4344,9 +4328,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -4389,9 +4373,9 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-								<div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-none d-xl-block">
+								<!-- <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-none d-xl-block">
 									<div class="product-cart-wrap">
 										<div class="product-img-action-wrap">
 											<div class="product-img product-img-zoom">
@@ -4431,13 +4415,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!--end product card-->
-							</div>
+							<!-- </div> -->
 							<!--End product-grid-4-->
-						</div>
+						<!-- </div> -->
 						<!--En tab seven-->
-					</div>
+					<!-- </div> -->
 					<!--End tab-content-->
 				</div>
 			</section>
@@ -5764,6 +5748,7 @@
 		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+		<script src="assets/js/filtering.js"></script>
 		<script src="assets/js/wishList.js"></script>
 		<script src="assets/js/cart.js"></script>
 	</body>

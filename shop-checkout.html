@@ -1446,7 +1446,7 @@
                         <div class="divider-2 mb-30"></div>
                         <div class="table-responsive order_table checkout">
                             <table class="table no-border">
-                                <tbody class="cart-items">
+                                <tbody class="cart-item-checkout">
                                 </tbody>
                             </table>
                             <div class="d-flex justify-content-end">
@@ -1721,117 +1721,6 @@
     <script src="./assets/js/shop.js?v=2.1"></script>
     <script src="assets/js/cart.js"></script>
     <script src="assets/js/wishList.js"></script>
-    <script>
-    let cartDetails = localStorage.getItem("shoppingCartDetails");
-    counter_disp_cartEl = document.getElementById("counter_disp_cart");
-    displayCart(cartDetails);
-    function displayCart() {
-    var cartArray = shoppingCart.listCart();
-    var output = "";
-    for(var i in cartArray) {
-      output += 
-      "<tr>"
-        + "<td class='image product-thumbnail'>" + `<img class="img_cart" src="${cartArray[i].imgSrc}" alt="image">` + "</td>"
-        + "<td class='font-style' style='font-size:17px;'>" + "<h6 class='text-heading'>" + cartArray[i].name + "</h6>" + "</td>"
-        + "<td>" +"<h6 class='text-muted'>"+ "X" + "&nbsp;&nbsp;" + cartArray[i].count +"</h6>"+"</td>"
-        + "<td style='text-align:center;'>" +"<h4 class='text-brand'>$"+ cartArray[i].total +"</h4>"+"</td>" 
-        +  "</tr>";
-    }
-    var output2 = "";
-    for(var i in cartArray) {
-      output2 += "<br><div class='d-flex justify-content-between'>"
-        + `<p><a href="shop-product-right.html"><img class='img_width' alt="Nest" src="${cartArray[i].imgSrc}" /></a></p><br>`
-        + `<p class="shopping-cart-title w-50"><a href="shop-product-right.html">${cartArray[i].name}
-        </a>
-        </p>`
-        + "<div class='shopping-cart-delete d-flex justify-content-end'>"
-        + "<a href='#'><button class='delete-item button_cart' data-name=" + JSON.stringify(cartArray[i].name) + "><i class='fi-rs-cross-small'></i></a></button>"
-        + "</div>"
-        + "</div>"
-        + "<div>"
-        + `<p class='d-flex justify-content-center text-justify'>
-        <span class='text-black'> ${cartArray[i].count} &nbsp; × &nbsp;</span>
-        <span class='text-black'>$</span><span class='text-black'>${cartArray[i].price}</span>
-        </p>`
-        + "</div><br>";
-    }
-    $('.model_card_none').html(output2);
-    $('.cart_dd_total').html(shoppingCart.totalCart());
-    $('.cart-items').html(output);
-    $('.sub_total').html(shoppingCart.totalCart());
-    $('.total').html(shoppingCart.totalCart());
-    $('.no-items').html(shoppingCart.totalCount());
-    $('.total_checkout').html(shoppingCart.totalCart());
-    $('.home').html(shoppingCart.totalCount());
-    if(shoppingCart.totalCount() == 0){
-      counter_disp_cartEl.classList.add("d-none");
-    } else if(shoppingCart.totalCount() > 0){
-      counter_disp_cartEl.classList.remove("d-none");
-    }
-    if (shoppingCart.totalCount() > 0){
-      icon_cart_darkEl.classList.remove("d-none");
-      icon_cart_lightEl.classList.add("d-none");
-    }
-
-    if (shoppingCart.totalCount() === 0){
-      icon_cart_darkEl.classList.add("d-none");
-      icon_cart_lightEl.classList.remove("d-none");
-    }
-  }
-
-  $('.cart-items').on("click", ".delete-item", function(event) {
-    var name = $(this).data('name')
-    shoppingCart.removeItemFromCartAll(name);
-    displayCart();
-  })
-  
-  
-  // -1
-  $('.cart-items').on("click", ".minus-item", function(event) {
-    var name = $(this).data('name')
-    shoppingCart.removeItemFromCart(name);
-    displayCart();
-  })
-  // +1
-  $('.cart-items').on("click", ".plus-item", function(event) {
-    var name = $(this).data('name')
-    shoppingCart.addItemToCart(name);
-    displayCart();
-  })
-
-  // Item count input
-  $('.cart-items').on("change", ".item-count", function(event) {
-     var name = $(this).data('name');
-     var count = Number($(this).val());
-     shoppingCart.setCountForItem(name, count);
-    displayCart();
-  });
-  
-  displayCart();
-//   Clear button
-  cart_details_modelEl = document.getElementById("cart_details_model");
-  sub_totalEl = document.getElementById("sub_total");
-  totalEl = document.getElementById("total");
-  no_itemsEl = document.getElementById("no-items");
-
-  // Delete item button in model
-  
-  $('.model_card_none').on("click", ".delete-item", function(event) {
-    var name = $(this).data('name');
-    shoppingCart.removeItemFromCartAll(name);
-    displayCart();
-  })
-
-  // WishList Functionality
-
-  icon_wishList_darkEl = document.getElementById("icon_wishList_dark");
-  icon_wishList_whiteEl = document.getElementById("icon_wishList_white");
-
-  if (shoppingWishList.totalCount() > 0){
-    icon_wishList_darkEl.classList.remove("d-none");
-    icon_wishList_whiteEl.classList.add("d-none");
-  }
-    </script>
 </body>
 
 </html>
