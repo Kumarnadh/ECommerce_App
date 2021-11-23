@@ -1,6 +1,5 @@
 var filterActive;
 function filterCategory(category) {
-    console.log(filterActive);
     if (filterActive != category) {
         // reset results list
         $('.filter-cat-results .f-cat').removeClass('active');

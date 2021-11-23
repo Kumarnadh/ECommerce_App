@@ -58,12 +58,15 @@ var shoppingCart = (function() {
     }
   };
   // Remove item from cart
+  let counter_val = 0
   obj.removeItemFromCart = function(name) {
       for(var item in cart) {
         if(cart[item].name === name) {
           cart[item].count --;
           if(cart[item].count === 0) {
+            counter_val = counter_val + 1;
             cart.splice(item, 1);
+            no_itemsEl.textContent = localStorage.getItem("length_of_cart") - counter_val;
           }
           break;
         }
@@ -88,7 +91,8 @@ var shoppingCart = (function() {
     saveCart();
   }
 
-  // Count cart 
+  // Count cart
+
   obj.totalCount = function() {
     var totalCount = 0;
     for(var item in cart) {
@@ -123,6 +127,14 @@ var shoppingCart = (function() {
   }
   return obj;
 })();
+
+// ***********************************************************************************************************************//
+// ************************************************** Mobile view ********************************************************//
+// **********************************************************************************************************************//
+  icon_cart_light_mobileEl = document.getElementById("icon_cart_light_mobile");
+  icon_cart_dark_mobileEl = document.getElementById("icon_cart_dark_mobile"); 
+// *************************************************************************************************************************//
+// **********************************************************************************************************************///
 
 //   cart Add details
 counter_disp_cartEl = document.getElementById("counter_disp_cart");
@@ -196,6 +208,11 @@ function displayCart() {
     icon_cart_darkEl.classList.add("d-none");
     icon_cart_lightEl.classList.remove("d-none");
   }
+
+  if(shoppingCart.totalCount() > 0){
+    icon_cart_light_mobileEl.classList.add("d-none");
+    icon_cart_dark_mobileEl.classList.remove("d-none");
+  }
 }
 
 // Delete item button
@@ -218,16 +235,6 @@ displayCart();
 
 no_itemsEl = document.getElementById("no-items");
 no_itemsEl.textContent = localStorage.getItem("length_of_cart");
-
-// WishList Functionality
-
-// icon_wishList_darkEl = document.getElementById("icon_wishList_dark");
-// icon_wishList_whiteEl = document.getElementById("icon_wishList_white");
-
-// if (shoppingWishList.totalCount() > 0){
-//   icon_wishList_darkEl.classList.remove("d-none");
-//   icon_wishList_whiteEl.classList.add("d-none");
-// }
 
 // *************************************************************************************************************************************//
 // ********************************************************* Cart Functionality *******************************************************//
@@ -302,13 +309,29 @@ let cartDetails = localStorage.getItem("shoppingCartDetails");
       counter_disp_cartEl.classList.remove("d-none");
     }
 
+    if(shoppingCart.totalCount() == 0){
+      counter_disp_cart_1El.classList.add("d-none");
+    } else if(shoppingCart.totalCount() > 0){
+      counter_disp_cart_1El.classList.remove("d-none");
+    }
+
     if (shoppingCart.totalCount() === 0){
       icon_cart_darkEl.classList.add("d-none");
       icon_cart_lightEl.classList.remove("d-none");
+      no_itemsEl.textContent = 0;
+    }
+
+    if(shoppingCart.totalCount() === 0){
+      icon_cart_light_mobileEl.classList.remove("d-none");
+      icon_cart_dark_mobileEl.classList.add("d-none");
     }
   }
 
+  // Delete items functionality in cart page
+  let count = 0;
   $('.cart-items').on("click", ".delete-item", function(event) {
+    count = count + 1;
+    no_itemsEl.textContent = localStorage.getItem("length_of_cart") - count;
     var name = $(this).data('name')
     shoppingCart.removeItemFromCartAll(name);
     displayCartDetails();
@@ -366,16 +389,6 @@ let cartDetails = localStorage.getItem("shoppingCartDetails");
     displayCartDetails();
   });
 
-  // WishList Functionality
-
-  // icon_wishList_darkEl = document.getElementById("icon_wishList_dark");
-  // icon_wishList_whiteEl = document.getElementById("icon_wishList_white");
-
-  // if (shoppingWishList.totalCount() > 0){
-  //   icon_wishList_darkEl.classList.remove("d-none");
-  //   icon_wishList_whiteEl.classList.add("d-none");
-  // }
-  
   // *************************************************************************************************************************************//
-  // ************************************************ End Cart Functionality ************************************************************//
+  // ************************************************** End Cart Functionality **********************************************************//
   // ************************************************************************************************************************************//

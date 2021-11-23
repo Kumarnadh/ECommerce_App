@@ -161,6 +161,14 @@ $('.add_wishlist').click(function(event) {
   let cartWishlist = localStorage.getItem("shoppingWishlist");
   displayWishlist(cartWishlist);
   function displayWishlist() {
+  // *******************************************************************************************************************************//
+  // ************************************************ Mobile Wishlist *************************************************************//
+  // *****************************************************************************************************************************//
+    icon_wishList_white_mobileEl = document.getElementById("icon_wishList_white_mobile");
+    icon_wishList_dark_mobileEl = document.getElementById("icon_wishList_dark_mobile");
+
+  // ****************************************************************************************************************************//
+  // ***************************************************************************************************************************//
     var cartArray = shoppingWishList.listCart();
     var output = "";
     for(var i in cartArray) {
@@ -204,6 +212,17 @@ $('.add_wishlist').click(function(event) {
       icon_wishList_darkEl.classList.remove("d-none");
       icon_wishList_whiteEl.classList.add("d-none");
     }
+    
+    if (shoppingWishList.totalCount() > 0){
+      icon_wishList_dark_mobileEl.classList.remove("d-none");
+      icon_wishList_white_mobileEl.classList.add("d-none");
+    }
+
+    if (shoppingWishList.totalCount() === 0){
+      icon_wishList_dark_mobileEl.classList.add("d-none");
+      icon_wishList_white_mobileEl.classList.remove("d-none");
+    }
+
   }
 
   // Delete button

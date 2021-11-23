@@ -6599,9 +6599,9 @@ h6.post-title {
   padding: 0;
 }
 
-.header-action-right {
+/* .header-action-right {
   display: none;
-}
+} */
 
 .header-action-right .search-location {
   display: none;
@@ -11475,6 +11475,9 @@ footer .hotline img {
   }
   .tab-style3 .nav-item {
     margin-bottom: 15px;
+  }
+  .et, .hotline, li.hot-deals, .header-action-2 .header-action-icon-2 span.lable {
+    display: none !important;
   }
 }
 
